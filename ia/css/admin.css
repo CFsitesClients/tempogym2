@@ -1,0 +1,108 @@
+/* Styles pour le site CLIENT TEMPOGYM Jette  */
+/* 20150607 Version Interface Administrateur @iNani */
+
+body{
+    background-color: navy;
+    color: #b3ff66;
+    font-family: courier new;
+}
+a{
+    color: #b3ff66;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #b3ff66;
+    text-decoration: none;
+}
+img.sponsor{
+    display:none;
+}
+#main h1{
+    background-color: #0CC6F8;
+}
+#news article h2, 
+#about article h2, 
+#dates article h2, 
+#galery article h2, 
+#contact article h2, 
+#docs article h2
+{
+    background-color: #660BFC;
+}
+#news article.right h2
+{
+    background-color: #F90340;
+}
+#contact article h3, 
+#about article h3
+{
+    background-color: #3BE1E1;
+}
+
+#main section, #news article {
+    background-color: navy;
+    border: 1px solid #b3ff66;
+}
+
+/* MENU */
+header nav ul{
+    background-color: navy;
+}
+header nav ul li{
+    background-color: #0CC6F8;
+    color: navy;
+}
+header nav ul li a{
+    font-family: courier new;
+    background-color: #0CC6F8;
+    color: navy;
+}
+header nav ul li a:hover{
+    background-color: navy;
+    color: #0CC6F8;
+}
+.connexion{
+    background-color: #B3FF66;
+}
+.connexion:hover{
+    background-color: #F90340;
+    color:white;
+    font-weight:bolder;
+}
+
+
+footer{
+    background-color: #0CC6F8;
+}
+
+
+
+@media screen and (min-width:960px) {
+    #responsive_logo {
+        display: none;
+    }
+}
+@media screen and (min-width:801px) {
+    #responsive_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #responsive_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #responsive_banner {
+        display:none;
+    }
+    #responsive_logo {
+        display:block;
+        width:100%;
+    }
+}	
+
+

@@ -1,0 +1,66 @@
+/* color */
+/* font color*/
+body{
+    color: #2e89dd; /* font */ 
+    /*background-color: #0A0A2A;*/
+}
+/* SECTION MAIN */
+#main section{
+    background-color: white;
+    border: 1px solid #95c9e0; 
+}
+#main h1{
+    background-color: #278CED; /*Bleu*/   
+    color: white;
+}
+/* SS SECTION */
+#news article, 
+#about article, 
+#dates article,
+#galery article, 
+#contact article, 
+#docs article{
+    border: 1px solid #F8BB61; /* jaune */
+}
+#news article.right{
+    border: 1px solid #FE6B6B; /* rouge */
+}  
+#news article h2, 
+#about article h2, 
+#dates article h2, 
+#galery article h2, 
+#contact article h2, 
+#docs article h2{
+    background-color: #F8BB61; /* jaune */ 
+    color: white;
+}
+#news article.right h2{
+    background-color: #FE6B6B; /* rouge */
+}
+#contact article h3, 
+#about article h3
+{
+    background-color: #1f90ff; /* bleu */ 
+    color: white;
+}
+/* Page Accueil - Quicklinks: ssnav */
+#liens article ul.ssnav li a{
+    color: #406BB6;
+}
+#liens article ul.ssnav li a:hover{
+    color: #202D44;
+}
+/* DATES : TABLES */
+#docs table.tenue th, #docs table.tenue td, #docs table.cotisation, #docs table.cotisation td, #docs table.cotisation th, #dates table.lieux th, #dates table.lieux td, #dates table.jour td{
+    border:1px solid #FECC3E;
+}
+#dates table.lieux td.grey{
+    background-color:lightsteelblue;
+}
+/* FOOTER */
+footer{
+    background-color: #7CB2D3; 
+}
+footer p{
+    color: #406BB6;
+}

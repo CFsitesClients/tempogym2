@@ -1,0 +1,80 @@
+/* MENU */
+header nav{
+    display:block; 
+}
+header nav ul{
+    list-style-type:none;
+    padding: 0 0 0 2px;
+    margin: 0;
+    width: 100%; /*955px;*/
+    height:1.875em; /*30px;*/
+}
+header nav ul li{
+    display:inline-block;
+    height: 1.875em; /*30px;*/
+    line-height: 1.875em; /*30px;*/
+    width: 14%; /*14.30766534%;*/
+    padding: 0px;
+    margin: 0px -2px;
+    font-weight: bolder;
+    background-color: transparent;
+}
+header nav ul li a{
+    display:block;
+    text-decoration: none;
+    margin:0 auto;
+    background-image:url(../img/2.png);
+    background-color:white;
+    width:100%; /* 132px; */
+    text-align:center;
+    line-height:1.875em; /*30px;*/
+    height:1.875em; /*30px;*/
+    font-family: Arial;
+    color: white;
+}
+header nav ul li a:hover{
+    background-image:url(../img/1.png);
+    background-color:white;
+    color: white;
+}
+
+
+/* Sub MENU */
+header nav ul li ul{
+    background:transparent;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:100%; 
+    z-index:200;
+}
+header nav ul li:hover ul{
+    display:block;
+}
+header nav ul li ul li{
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+header nav ul li ul li a{
+    display:block;
+    background-image:url(../img/2.png);
+    background-color:white;
+    height:2em; /*1.875em;*/
+    /*font-size: 0.864em;*/
+    font-style:normal;
+    margin:0px;
+    padding:1px 15px;
+    text-align:left;
+    font-style: italic;
+}
+header nav ul li ul li a:hover{
+    background-image:url(../img/1.png);
+    background-color:white;
+    color: white;
+    text-decoration:none;
+}

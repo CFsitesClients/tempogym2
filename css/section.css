@@ -1,0 +1,91 @@
+body{
+    background-color: #CED8F6;
+    text-decoration-color: black; 
+    border-radius: 3px;
+}
+
+header nav ul {
+
+    background-color: #0A0A2A;
+}
+
+#calendar figure{
+
+    background-color:  #4682B4;
+    border-radius: 3px;
+}
+
+header nav ul li a:hover{
+    border-radius: 3px;
+}
+
+#main h1{
+    border-radius: 3px;   
+    box-shadow: 3px 3px 3px #3785CD;  
+
+
+
+}
+
+#main section{
+    background-color: #58ACFA;
+    margin-top: 5px;
+    margin-bottom:  5px; 
+    border-radius: 3px; 
+    box-shadow: 3px 3px 3px #3785CD;
+
+}
+
+header nav ul {
+    background-color:#CED8F6;
+
+}
+
+header nav ul li {
+    border-radius: 3px; 
+    border: 1px solid #CED8F6;
+    background-color: #4B7EA7;
+    
+}
+
+#responsive_banner {
+
+    border-radius: 3px;
+
+}
+
+#news article h2, 
+#about article h2, 
+#dates article h2, 
+#galery article h2, 
+#contact article h2, 
+#docs article h2{
+    background-color:#F5DA81; /* jaune */ 
+    color: white;
+
+}
+#news article.right h2{
+    background-color: #FE6B6B; /* rouge */
+
+}
+
+#news article.right  {
+    border-radius: 3px;   
+}
+
+#news article, #about article, #dates article, #galery article, #contact article, #docs article {
+
+    border-radius: 5px; 
+
+}
+#news article, 
+#about article, 
+#dates article,
+#galery article, 
+#contact article, 
+#docs article
+{
+    margin:0 .5em .5em .5em;
+    border: 1px solid #F5DA81;
+
+}
