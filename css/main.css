@@ -73,7 +73,12 @@ nav ul li a{
     color: #848484;
 }
 */
-
+/* ACCUEIL : INTRO */
+section#chapeau p.intro{
+    margin: 16em;
+    border: 5px #b3ff66 solid;
+    color: #b3ff66;
+}
 /* INFOMATIONS IMPORTANTES */
 
 section#news {

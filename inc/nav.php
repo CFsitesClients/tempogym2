@@ -9,15 +9,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
-                <li><a href="hist.php">Histoire et philosophie</a>
-                    <ul class="sous_menu">
-                        <li><a href="hist.php"></a>
-                        <li><a href="asbl.php">Le comit&eacute;</a>
-                            
-                    </ul>
-                </li>
-                <li><a href="dates.php">Dates</a></li>
-
+                <li><a href="hist.php">Histoire<span class="none"> et philosophie</span></a></li>
+                <li><a href="dates.php">Calendriers<span class="none"> et horaires</span></a></li>
                 <li><a href="galerie.php">Galerie</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="docs.php">Documents</a></li>
@@ -27,13 +20,8 @@
             <select onchange="top.location.href = this.options[this.selectedIndex].value;">
                 <option class="selected" value="" selected="selected">Aller sur la page</option>
                 <option value="index.php">Accueil</option>
-                <option value="club.php">Le club</option>
-           <!-- rajout ss menu ?-->  
-           <!-- 
-           <option value="hist.php">Histoire et philosophie</option>
-                <option value="asbl.php">Le comit&eacute;</option>
-           -->
-                <option value="dates.php">Dates</option>
+                <option value="hist.php">Histoire et philosophie</option>
+                <option value="dates.php">Calendriers et horaires</option>
                 <option value="galerie.php">Galerie</option>
                 <option value="contact.php">Contact</option>
                 <option value="docs.php">Documents</option>
