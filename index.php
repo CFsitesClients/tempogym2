@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once 'connect.php';
 /* afficher le contenu de la DB page accueil: 2 articles */
 $sql_p1_a1 = "SELECT * FROM `tgj_articles` WHERE `tgi_pages_id`=1 AND `id`=1";

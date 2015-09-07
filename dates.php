@@ -9,7 +9,7 @@ include_once 'inc/head.php';
 		<h2>Calendriers et horaires</h2>
             <?php
             require_once 'ia/tgj_upload.php';
-            while ($ledoc = mysqli_fetch_assoc($recup_dim)) {
+            while ($ledoc = mysqli_fetch_assoc($recup_dates)) {
 
                 echo "<iframe  width='100%' height='900px' 
 				src='".$path_docs . $ledoc['lurl'] . "'
@@ -29,7 +29,7 @@ include_once 'inc/head.php';
         </article>
 
 		<article>
-	<p><a href="contact.php">Adresses des salles</a></p>
+	<p><a href="contact.php#adr">Adresses des salles</a></p>
 	</article>
 		
 
