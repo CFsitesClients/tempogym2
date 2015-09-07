@@ -9,7 +9,7 @@ include_once 'inc/head.php';
             <p>
                 La tenue du club est obligatoire et sera portée en compétition et lors de l’entraînement du vendredi.
             </p>
-            <p>Renseignements et commandes auprès de <a href="contact.php#tenue">Patrice</a>.</p>
+            <p>Renseignements et commandes auprès de Patrice.</p>
             <table class="tenue">
                 <tr>
                     <th>T-shirt</th>
@@ -169,9 +169,10 @@ include_once 'inc/head.php';
             <p>L’assurance fédérale est incluse.
             </p>
         </article>
+        </section> 
         <?php
         include_once 'inc/footer.php';
         ?>
-    </section> 
+</section>
 </body>
 </html>

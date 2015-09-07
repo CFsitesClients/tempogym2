@@ -30,15 +30,18 @@ include_once 'inc/head.php';
 
         </article>
 
+
+        <artcile><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme complet</a></span>
+        </artcile>
+    </section>
+    <section id="lieux">
         <article>
             <h2><a name="adr"></a>Adresses des salles</h2>
 
-            <div id="carte">
-            </div>
 
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z6ZbdxfB0nSs.kB-6GCDLN1TM" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z6ZbdxfB0nSs.kB-6GCDLN1TM" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
 
-      
+
             <h3>BASIC-FIT</h3>
             <p>Avenue du Laerbeek 125 à 1090 Bruxelles (accès par l’UZ)<br />02/477.40.99</p>
 
@@ -53,6 +56,7 @@ include_once 'inc/head.php';
                 e-mail : tempogymjette&#64;hotmail.com <br />Gsm club : 0473/17.34.14
             </p>
         </article>
+    </section>
 
         <?php
         include_once 'inc/footer.php';

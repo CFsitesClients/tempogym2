@@ -78,3 +78,26 @@ header nav ul li ul li a:hover{
     color: white;
     text-decoration:none;
 }
+/* Styles des liens internes : affordance bouton nav*/
+.lien_interne a{
+    display:block;
+    margin:auto auto;
+    padding:.3em;
+    height: 1.875em; /*30px;*/
+    line-height: 1.875em; 
+    width:30%;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-image:url(../img/2.png);
+    background-color:white;
+    border:1px solid white;
+}	
+
+.lien_interne a:hover {
+    color: white;
+    background-image:url(../img/1.png);
+    background-color:white;
+    border:1px solid white;
+}
