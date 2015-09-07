@@ -33,7 +33,6 @@ header nav ul li a:hover{
     margin-bottom:  5px; 
     border-radius: 3px; 
     box-shadow: 3px 3px 3px #3785CD;
-
 }
 
 header nav ul {
@@ -59,7 +58,10 @@ header nav ul li {
 #dates article h2, 
 #galery article h2, 
 #contact article h2, 
-#docs article h2{
+#docs article h2,
+#organi article h2,
+#lieux article h2
+{
     background-color:#F5DA81; /* jaune */ 
     color: white;
 
@@ -73,7 +75,7 @@ header nav ul li {
     border-radius: 3px;   
 }
 
-#news article, #about article, #dates article, #galery article, #contact article, #docs article {
+#news article, #about article, #dates article, #galery article, #contact article, #docs article, #lieux article, #organi article {
 
     border-radius: 5px; 
 
@@ -83,7 +85,9 @@ header nav ul li {
 #dates article,
 #galery article, 
 #contact article, 
-#docs article
+#docs article,
+#organi article,
+#lieux article
 {
     margin:0 .5em .5em .5em;
     border: 1px solid #F5DA81;

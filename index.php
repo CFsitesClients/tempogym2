@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once 'connect.php';
 /* afficher le contenu de la DB page accueil: 2 articles */
 $sql_p1_a1 = "SELECT * FROM `tgj_articles` WHERE `tgi_pages_id`=1 AND `id`=1";
@@ -14,7 +14,7 @@ include_once 'inc/head.php';
 <section id="main">		
     <h1>Bienvenue sur le site de Tempogym Jette</h1>
     <section id="chapeau">
-            <p class="intro">Dans un esprit familial, notre équipe de moniteurs accueille vos enfants, filles et garçons, dès l'âge de 3 ans et demi de l'initiation à la compétition.</p>        
+        <p class="intro">Dans un esprit familial, notre équipe de moniteurs accueille vos enfants, filles et garçons, dès l'âge de 3 ans et demi de l'initiation à la compétition.</p>        
     </section>
     <section id="news">
         <article>

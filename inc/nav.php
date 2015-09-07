@@ -1,4 +1,4 @@
-﻿</head>
+</head>
 <body>
     <!-- <h1>Tempogym : club de gymnastique à Jette </h1>-->
     <header>
@@ -14,7 +14,7 @@
                 <li><a href="galerie.php">Galerie</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="docs.php">Documents</a></li>
-                <li><a href="ia/admin_form.php">Administrer</a></li>
+                <li><a href="ia/admin_form.php" target="_blank">Administrer</a></li>
             </ul>
             <!-- Option menu small device ::: Responsiveness -->
             <select onchange="top.location.href = this.options[this.selectedIndex].value;">
@@ -25,7 +25,7 @@
                 <option value="galerie.php">Galerie</option>
                 <option value="contact.php">Contact</option>
                 <option value="docs.php">Documents</option>
-                <option value="ia/admin_form.php">Administrer</option>
+                <option value="ia/admin_form.php" target="_blank">Administrer</option>
             </select>
         </nav>
     </header>  

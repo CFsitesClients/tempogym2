@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
 Projet client @CF2m 2015
 Club Tempogym Jette

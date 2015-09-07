@@ -19,6 +19,8 @@ body{
 #dates article,
 #galery article, 
 #contact article, 
+#organi article,
+#lieux article,
 #docs article{
     border: 1px solid #F8BB61; /* jaune */
 }
@@ -30,7 +32,9 @@ body{
 #dates article h2, 
 #galery article h2, 
 #contact article h2, 
-#docs article h2{
+#docs article h2,
+#organi article h2,
+#lieux article h2{
     background-color: #F8BB61; /* jaune */ 
     color: white;
 }
@@ -38,18 +42,13 @@ body{
     background-color: #FE6B6B; /* rouge */
 }
 #contact article h3, 
-#about article h3
+#about article h3,
+#lieux article h3
 {
-    background-color: #1f90ff; /* bleu */ 
+    background-color: #8CC1AD; /* vert */
     color: white;
 }
-/* Page Accueil - Quicklinks: ssnav */
-#liens article ul.ssnav li a{
-    color: #406BB6;
-}
-#liens article ul.ssnav li a:hover{
-    color: #202D44;
-}
+
 /* DATES : TABLES */
 #docs table.tenue th, #docs table.tenue td, #docs table.cotisation, #docs table.cotisation td, #docs table.cotisation th, #dates table.lieux th, #dates table.lieux td, #dates table.jour td{
     border:1px solid #FECC3E;
@@ -57,9 +56,18 @@ body{
 #dates table.lieux td.grey{
     background-color:lightsteelblue;
 }
+/* IFRAME*/
+iframe{
+    border:.1em outset lightsteelblue;
+    display:block;
+    margin: .65em;
+    box-shadow: .3em .4em .5em lightsteelblue;
+    width:97.5%;
+}
 /* FOOTER */
 footer{
     background-color: #7CB2D3; 
+    margin-top:-18px;
 }
 footer p{
     color: #406BB6;
