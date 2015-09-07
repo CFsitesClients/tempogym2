@@ -67,6 +67,7 @@ iframe{
 /* FOOTER */
 footer{
     background-color: #7CB2D3; 
+    margin-top:-18px;
 }
 footer p{
     color: #406BB6;
