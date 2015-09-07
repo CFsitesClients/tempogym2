@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once 'inc/head.php';
 ?>
 <section id="main">		
@@ -25,7 +25,7 @@ include_once 'inc/head.php';
                 </tr>
                 <tr>
                     <td>Disponible pour tous mais obligatoire pour les groupes baby-gym, pré-gym et garçons s'entrainant exclusivement le vendredi</td>
-                    <td>Sera porté par les gymnastes de Ludovic </td>
+                    <td>Sera porté par les gymnastes des groupes compétitions</td>
                     <td>Disponible pour toutes mais obligatoire pour les filles évoluant exclusivement le vendredi ou le mercredi</td>
                     <td>Disponible pour toutes mais obligatoire pour les filles s'entrainant plusieurs fois par semaine </td>
                 </tr>
@@ -43,7 +43,7 @@ include_once 'inc/head.php';
 
                     <th>Léotard garçons </th>
                     <td>65&nbsp;€</td>
-                    <td>Sera porté par les gymnastes de Ludovic </td>
+                    <td>Sera porté par les gymnastes des groupes compétitions </td>
                 </tr>
                 <tr>
                     <th>Tunique d’entraînement </th>
@@ -158,14 +158,14 @@ include_once 'inc/head.php';
                 <tr>
                     <td>Garçons Compét<span class="none">ition</span></td>
                     <td>2*/sem. +14 dim.</td>
-                    <td>Ludovic</td>
+                    <td>???</td>
                     <td>379&nbsp;€</td>
                 </tr>
 
             </table>
 
             <p>
-                La cotisation doit être réglée en une fois, au plus tard le 16 septembre 2015, et peut être versée sur le compte BE97 1490 5877 9749 / BIC : GEBABEBB de Tempogym Jette.
+                La cotisation doit être réglée en une fois, au plus tard à la mi-septembre, et peut être versée sur le compte BE97 1490 5877 9749 / BIC : GEBABEBB de Tempogym Jette.
             </p>
             <p>L’assurance fédérale est incluse.
             </p>

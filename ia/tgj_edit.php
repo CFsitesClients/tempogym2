@@ -5,7 +5,7 @@ require_once '../connect.php';
 
  * SANS ckEditor limiter les modif aux 4 premiers articles, les articles suivant contiennent de l'HTML!
  *  */
-$sqlarticles= "SELECT * FROM `tgj_articles`LIMIT 4"; 
+$sqlarticles= "SELECT * FROM `tgj_articles`LIMIT 2"; 
 $reqarticles = mysqli_query($connect, $sqlarticles) or die(mysqli_error($connect));
 
 
