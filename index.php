@@ -12,7 +12,8 @@ $recup_p1_a2 = mysqli_fetch_assoc($req_p1_a2);
 include_once 'inc/head.php';
 ?>
 <section id="main">		
-    <h1>Bienvenue sur le site de Tempogym Jette</h1>
+    <h1><a class="hp" href="index.php">Bienvenue sur le site de Tempogym Jette</a></h1>
+    
     <section id="chapeau">
         <p class="intro">Dans un esprit familial, notre équipe de moniteurs accueille vos enfants, filles et garçons, dès l'âge de 3 ans et demi de l'initiation à la compétition.</p>        
     </section>

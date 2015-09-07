@@ -2,7 +2,7 @@
 include_once 'inc/head.php';
 ?>
 <section id="main">		
-    <h1>Tempogym Jette</h1>
+    <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="contact">
         <article>
             <h2>Le comité administratif</h2>
@@ -12,7 +12,7 @@ include_once 'inc/head.php';
             <h3>Président</h3>
             <p>Stéphane Etienne | stefetienne&#64;skynet.be</p>
 
-
+<!--
             <h3><a id="tenue"></a>Vice-Président</h3>
             <p>Patrice Van Den bossche
 
@@ -27,11 +27,11 @@ include_once 'inc/head.php';
 
             <h3>Coordinateur</h3>
             <p>Jonathan Nani</p>
-
+-->
         </article>
 
 
-        <artcile><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme complet</a></span>
+        <artcile><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span>
         </artcile>
     </section>
     <section id="lieux">
