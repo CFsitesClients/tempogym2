@@ -1,12 +1,11 @@
-﻿<?php
-session_start();
+<?php
 require_once 'connect.php';
 
 
 include_once 'inc/head.php';
 ?>
 <section id="main">		
-    <h1>Tempogym Jette</h1>
+    <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="about">
         <article>
             <h2>Histoire et philosophie</h2>

@@ -7,7 +7,7 @@ if (!isset($_SESSION['id_session_admin']) || $_SESSION['id_session_admin'] != se
 
 // Si POST, mise à jour de la DB
 if (isset($_POST['lid']) && ctype_digit($_POST['lid'])) {
-    require_once '../connect.php';
+    require_once 'connect.php';
     // on va mettre les variables POST en variables locales et les traiter si nécessaire
     $lid = $_POST['lid'];
     $letitre = htmlspecialchars(trim($_POST['letitre']), ENT_QUOTES); // on retire les espaces devant et derrière la chaine (trim), on convertit les caractères spéciaux en entités html (htmlspecialchars) en convertissant les " et ' (,ENT_QUOTES)

@@ -4,7 +4,7 @@
     <header>
         <figure>
             <img id="responsive_banner" src="img/banner.jpg" alt="Tempogym jette" title="Tempogym jette">
-            <img id="responsive_logo" src="img/logo.png" alt="Tempogym Jette" title="Tempogym Jette">	
+            <a class="hp" href="index.php"><img id="responsive_logo" src="img/logo.png" alt="Tempogym Jette" title="Tempogym Jette"></a>	
         </figure>
         <nav>
             <ul>

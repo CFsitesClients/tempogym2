@@ -2,7 +2,7 @@
 include_once 'inc/head.php';
 ?>
 <section id="main">		
-    <h1>Tempogym Jette</h1>
+    <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="docs">
         <article>
             <h2>Tenue du club</h2>

@@ -39,45 +39,23 @@ header nav ul li a:hover{
 }
 
 
-/* Sub MENU */
-header nav ul li ul{
-    background:transparent;
-    height:auto;
-    padding:0px;
-    margin:0px;
-    border:0px;
-    position:absolute;
-    width:100%; 
-    z-index:200;
-}
-header nav ul li:hover ul{
+h1 a.hp{
     display:block;
-}
-header nav ul li ul li{
-    display:block;
-    float:none;
-    margin:0px;
-    padding:0px;
-    width:100%;
-}
-header nav ul li ul li a{
-    display:block;
+    text-decoration: none;
+    color: white;
     background-image:url(../img/2.png);
     background-color:white;
-    height:2em; /*1.875em;*/
-    /*font-size: 0.864em;*/
-    font-style:normal;
-    margin:0px;
-    padding:1px 15px;
-    text-align:left;
-    font-style: italic;
+    /*height: 1.875em; /*30px;*/
+    /*line-height: 1.875em;*/
+    border:1px solid white;
 }
-header nav ul li ul li a:hover{
+h1 a.hp:hover{
+    color: white;
     background-image:url(../img/1.png);
     background-color:white;
-    color: white;
-    text-decoration:none;
+    border:1px solid white;
 }
+
 /* Styles des liens internes : affordance bouton nav*/
 .lien_interne a{
     display:block;
@@ -85,7 +63,7 @@ header nav ul li ul li a:hover{
     padding:.3em;
     height: 1.875em; /*30px;*/
     line-height: 1.875em; 
-    width:30%;
+    width:33%;
     min-width: 200px;
     text-align: center;
     text-decoration: none;
@@ -93,6 +71,7 @@ header nav ul li ul li a:hover{
     background-image:url(../img/2.png);
     background-color:white;
     border:1px solid white;
+    font-weight: bold;
 }	
 
 .lien_interne a:hover {
@@ -100,4 +79,5 @@ header nav ul li ul li a:hover{
     background-image:url(../img/1.png);
     background-color:white;
     border:1px solid white;
+    font-weight: bold;
 }

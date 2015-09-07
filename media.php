@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 /* Si la session n'existe pas (encore) ou ne correspond plus au cookie */
 if (!isset($_SESSION['id_session_membre']) || $_SESSION['id_session_membre'] != session_id()) {
@@ -9,7 +9,7 @@ include_once 'inc/fotorama.php';
 include_once 'inc/nav.php';
 ?>
 <section id="main">		
-    <h1>Tempogym Jette</h1>
+    <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="galery">
         <article>
             <h2>Galerie</h2>
