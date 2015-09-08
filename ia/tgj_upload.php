@@ -59,7 +59,7 @@ if(isset($_GET["lid"]) && ctype_digit($_GET["lid"])){
     $req = mysqli_query($connect,"SELECT lurl FROM tgj_docs WHERE id=".$_GET["lid"])or die("ZUT!");
     $url = mysqli_fetch_assoc($req);
     // suppression de la db
-    mysqli_query($connect,"DELETE FROM tgj_docs WHERE id =".$_GET['lid']." AND tgj_pages_id=10" )or die("Zut!");
+    mysqli_query($connect,"DELETE FROM tgj_docs WHERE id =".$_GET['lid'] )or die("Zut!");
     // suppression du fichier
     unlink($url['lurl']);
 }
