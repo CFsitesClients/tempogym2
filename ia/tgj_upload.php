@@ -1,10 +1,9 @@
 <?php
-
 require_once 'connect.php';
 
 if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
     $letitre = htmlspecialchars(strip_tags(trim($_POST['letitre'])), ENT_QUOTES);
-    (isset($_POST['lid'])&&ctype_digit($_POST['lid']))? $lid = $_POST['lid'] : $lid=8;
+    (isset($_POST['lid']) && ctype_digit($_POST['lid'])) ? $lid = $_POST['lid'] : $lid = 8;
     // chemin du dossier d'upload
     $dossier = "../docs/";
     // récupération du nom d'origine avec son extension
@@ -53,11 +52,24 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
     }
 }
 
+
+/* Supprime un document téléchargeable de la liste */
+if(isset($_GET["lid"]) && ctype_digit($_GET["lid"])){
+    // récupération de l'url du fichier dans la db grâce à son id
+    $req = mysqli_query($connect,"SELECT lurl FROM tgj_docs WHERE id=".$_GET["lid"])or die("ZUT!");
+    $url = mysqli_fetch_assoc($req);
+    // suppression de la db
+    mysqli_query($connect,"DELETE FROM tgj_docs WHERE id =".$_GET['lid']." AND tgj_pages_id=10" )or die("Zut!");
+    // suppression du fichier
+    unlink($url['lurl']);
+}
+
+
 // on va afficher les liens vers les docs sauvés dans la db
 $recup_dates = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=5 ORDER BY id DESC LIMIT 1;") or die(mysqli_error($connect));
 
 $recup_docs = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=7 ORDER BY id DESC;") or die(mysqli_error($connect));
 
-$recup_organi= mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=3 ORDER BY id DESC;") or die(mysqli_error($connect));
+$recup_organi = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=3 ORDER BY id DESC;") or die(mysqli_error($connect));
 
-$recup_saison= mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=10 ORDER BY id DESC;") or die(mysqli_error($connect));
+$recup_saison = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=10 ORDER BY id DESC;") or die(mysqli_error($connect));

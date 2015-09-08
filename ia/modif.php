@@ -57,11 +57,9 @@ include_once 'inc/head.php';
             ?>          
         </article>  
     </section>
-            <?php
-            /* include_once '../inc/agenda.php';
-              include_once '../inc/nav_qklk.php'; */
-            include_once '../inc/footer.php';
-            ?>
+    <?php
+    include_once '../inc/footer.php';
+    ?>
 </section> 
 </body>
 </html> 
