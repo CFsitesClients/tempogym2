@@ -21,30 +21,7 @@ include_once 'inc/head.php';
             }
             ?>
         </article>
-        <article>
-            <h2>Modifier le document pdf : Calendrier</h2>
-            <div>
-                <p>Fichier de maximum 5 MO au format: .pdf </p>
-                <form name="form_dates" action="admin.php" method="POST" enctype='multipart/form-data'>
-                    <input type="hidden" name='lid' value="5" />
-                    <input type="text" name="letitre" placeholder="Titre" required /><br/>
-                    <!-- A mettre avent le file ! = 5 mio -->
-                    <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-                    <input type="file" name="lefichier" required /><br/>
-                    <input type="submit" value="Envoyer le fichier"/>
-                </form>
-                <?php
-                require_once 'tgj_upload.php';
-                while ($lecalendar = mysqli_fetch_assoc($recup_dates)) {
-                    echo "<a href='" . $lecalendar['lurl'] . "' target='_blank'>" . $lecalendar['letitre'] . "</a> (";
-                    // BONUS affichage de l'extension récupérée de l'url
-                    echo strrchr($lecalendar['lurl'], '.');
-                    echo ")<br />";
-                    echo "<iframe  width='50%' height='200px' src='" . $lecalendar['lurl'] . "'><p class='dim'><a href='" . $lecalendar['lurl'] . "' title='" . $lecalendar['letitre'] . "'><img class='dim' src='" . $lecalendar['lurl'] . "' alt='" . $lecalendar['letitre'] . "'/></a></p></iframe><br />";
-                }
-                ?>
-        </article> 
-        <article>
+		<article>
             <h2>Modifier le document pdf : Organigramme</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
@@ -68,7 +45,31 @@ include_once 'inc/head.php';
                 ?>
         </article>   
         <article>
-            <h2>Modifier les documents pdf téléchargeables : </h2>
+            <h2>Modifier le document pdf : Calendrier</h2>
+            <div>
+                <p>Fichier de maximum 5 MO au format: .pdf </p>
+                <form name="form_dates" action="admin.php" method="POST" enctype='multipart/form-data'>
+                    <input type="hidden" name='lid' value="5" />
+                    <input type="text" name="letitre" placeholder="Titre" required /><br/>
+                    <!-- A mettre avent le file ! = 5 mio -->
+                    <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                    <input type="file" name="lefichier" required /><br/>
+                    <input type="submit" value="Envoyer le fichier"/>
+                </form>
+                <?php
+                require_once 'tgj_upload.php';
+                while ($lecalendar = mysqli_fetch_assoc($recup_dates)) {
+                    echo "<a href='" . $lecalendar['lurl'] . "' target='_blank'>" . $lecalendar['letitre'] . "</a> (";
+                    // BONUS affichage de l'extension récupérée de l'url
+                    echo strrchr($lecalendar['lurl'], '.');
+                    echo ")<br />";
+                    echo "<iframe  width='50%' height='200px' src='" . $lecalendar['lurl'] . "'><p class='dim'><a href='" . $lecalendar['lurl'] . "' title='" . $lecalendar['letitre'] . "'><img class='dim' src='" . $lecalendar['lurl'] . "' alt='" . $lecalendar['letitre'] . "'/></a></p></iframe><br />";
+                }
+                ?>
+        </article> 
+        
+        <article>
+            <h2>Modifier la liste des documents pdf téléchargeables : </h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
                 <form name="form_docs" action="admin.php" method="POST" enctype='multipart/form-data'>
@@ -81,15 +82,44 @@ include_once 'inc/head.php';
                 </form>
                 <?php
                 require_once 'tgj_upload.php';
+				
                 while ($lesdocs = mysqli_fetch_assoc($recup_docs)) {
                     echo "<a href='" . $lesdocs['lurl'] . "' target='_blank'>" . $lesdocs['letitre'] . "</a> (";
                     // BONUS affichage de l'extension récupérée de l'url
                     echo strrchr($lesdocs['lurl'], '.');
                     echo ")<br />";
                     echo "<iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><p><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></p></iframe><br />";
+                    echo "<img src='supprimer.png' 
+                      onclick='supprime(\""
+                        .substr(strrchr($lesdocs['lurl'], '/'),1)."\""
+                        . ", "
+                        .$lesdocs['id'].");' alt='Supprimer' />";
                 }
                 ?>
         </article>   
+		 <article>
+            <h2>Modifier le document pdf : Infos saison</h2>
+            <div>
+                <p>Fichier de maximum 5 MO au format: .pdf </p>
+                <form name="form_docs" action="admin.php" method="POST" enctype='multipart/form-data'>
+                    <input type="hidden" name='lid' value="10" />
+                    <input type="text" name="letitre" placeholder="Titre" required /><br/>
+                    <!-- A mettre avent le file ! = 5 mio -->
+                    <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
+                    <input type="file" name="lefichier" required /><br/>
+                    <input type="submit" value="Envoyer le fichier"/>
+                </form>
+                <?php
+                require_once 'tgj_upload.php';
+                while ($lasaison = mysqli_fetch_assoc($recup_saison)) {
+                    echo "<a href='" . $lasaison['lurl'] . "' target='_blank'>" . $lasaison['letitre'] . "</a> (";
+                    // BONUS affichage de l'extension récupérée de l'url
+                    echo strrchr($lasaison['lurl'], '.');
+                    echo ")<br />";
+                    echo "<iframe  width='50%' height='200px' src='" . $lasaison['lurl'] . "'><p><a href='" . $lasaison['lurl'] . "' title='" . $lasaison['letitre'] . "'><img src='" . $lasaison['lurl'] . "' alt='" . $lasaison['letitre'] . "'/></a></p></iframe><br />";
+                }
+                ?>
+        </article>
     </section>
     <?php
     include_once '../inc/footer.php';
