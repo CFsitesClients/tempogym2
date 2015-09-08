@@ -4,7 +4,8 @@ include_once 'inc/head.php';
 <section id="main">		
     <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="docs">
-        <article>
+        <!--
+		<article>
             <h2>Tenue du club</h2>
             <p>
                 La tenue du club est obligatoire et sera portée en compétition et lors de l’entraînement du vendredi.
@@ -58,6 +59,7 @@ include_once 'inc/head.php';
             </table>
 
         </article>
+		-->
         <article>
             <h2>Documents à télécharger</h2>
             <ul>
@@ -74,8 +76,32 @@ include_once 'inc/head.php';
             </ul>
            
         </article>
-
-        <article>
+       
+        <article> 
+           
+            <?php
+            require_once 'ia/tgj_upload.php';
+            while ($ledoc = mysqli_fetch_assoc($recup_saison)) {
+				echo "<h2>".$ledoc['letitre']."</h2>";
+                echo "<iframe  width='100%' height='900px' 
+				src='" . $path_docs . $ledoc['lurl'] . "'
+				><p class='dim'><a 
+				href='" . $path_docs . $ledoc['lurl'] . "' title='" . $ledoc['letitre'] . "'
+				><img class='dim' 
+				src='" . $path_docs . $ledoc['lurl'] . "' alt='" . $ledoc['letitre'] . "'
+				/></a></p></iframe><br />";
+                echo "
+	<p><a href='" . $path_docs . $ledoc['lurl'] . "' target='_blank'>" . $ledoc['letitre'] . "</a> (";
+                // BONUS affichage de l'extension récupérée de l'url
+                echo strrchr($ledoc['lurl'], '.');
+                echo ")</p>
+	";
+            }
+            ?>
+        </article>
+		
+		<!--
+		 <article>
             <h2>
                 COTISATIONS 2015-2016
             </h2>
@@ -169,7 +195,9 @@ include_once 'inc/head.php';
             <p>L’assurance fédérale est incluse.
             </p>
         </article>
-        </section> 
+		-->
+		
+		</section> 
         <?php
         include_once 'inc/footer.php';
         ?>

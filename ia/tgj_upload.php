@@ -59,3 +59,5 @@ $recup_dates = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id
 $recup_docs = mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=7 ORDER BY id DESC;") or die(mysqli_error($connect));
 
 $recup_organi= mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=3 ORDER BY id DESC;") or die(mysqli_error($connect));
+
+$recup_saison= mysqli_query($connect, "SELECT * FROM tgj_docs WHERE tgi_pages_id=10 ORDER BY id DESC;") or die(mysqli_error($connect));

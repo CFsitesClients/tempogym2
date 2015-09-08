@@ -1,17 +1,17 @@
 body{
-    background-color: #CED8F6;
-    text-decoration-color: black; 
+    /*background-color: #CED8F6;
+    text-decoration-color: black; */
     border-radius: 3px;
 }
-
+/*
 header nav ul {
 
     background-color: #0A0A2A;
-}
+}*/
 
 #calendar figure{
 
-    background-color:  #4682B4;
+    /*background-color: #4682B4;*/
     border-radius: 3px;
 }
 
@@ -28,22 +28,22 @@ header nav ul li a:hover{
 }
 
 #main section{
-    background-color: #58ACFA;
+    /*background-color: #58ACFA;*/
     margin-top: 5px;
     margin-bottom:  5px; 
     border-radius: 3px; 
     box-shadow: 3px 3px 3px #3785CD;
 }
-
+/*
 header nav ul {
     background-color:#CED8F6;
 
-}
+}*/
 
 header nav ul li {
     border-radius: 3px; 
     border: 1px solid #CED8F6;
-    background-color: #4B7EA7;
+    /*background-color: #4B7EA7;*/
     
 }
 

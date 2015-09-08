@@ -45,7 +45,7 @@ body{
 #about article h3,
 #lieux article h3
 {
-    background-color: #8CC1AD; /* vert */
+    background-color: #FE6B6B; /* rouge */
     color: white;
 }
 
@@ -66,8 +66,9 @@ iframe{
 }
 /* FOOTER */
 footer{
-    background-color: #7CB2D3; 
-    margin-top:-18px;
+    
+	background-color: #7CB2D3; 
+    /*margin-top:-18px;*/
 }
 footer p{
     color: #406BB6;
