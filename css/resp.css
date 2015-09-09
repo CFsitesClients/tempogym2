@@ -40,7 +40,7 @@ header figure{
     width: 99%; /*955px;*/
 }
 #main h1{
-	width: 99%;
+    width: 99%;
     margin:2px 0;
     font-size:1.500em; /*24px;*/
     /*padding:.5em 0;*/
@@ -246,8 +246,8 @@ input[type="submit"]:hover{
 
 /* FOOTER */
 footer{
-	/*width:99%;
-	height:auto;*/
+    /*width:99%;
+    height:auto;*/
     text-align:center;
     padding:.2em;
 }
@@ -364,10 +364,10 @@ footer p{
         width:80%;
         float:left;
     }
-	footer{
-		width:98.9%;
-		float:left;
-	}
+    footer{
+        width:98.9%;
+        float:left;
+    }
     #calendar{
         width:100%;
     }
