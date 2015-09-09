@@ -9,7 +9,7 @@ include_once 'inc/head.php';
 ?>
 <section id="main">
 
-    <h1>Bienvenue "<?= $_SESSION['lelogin_admin']; ?>" vous êtes connecté en tant qu'administrateur </h1>
+    <h1>Bienvenue "<?= $_SESSION['lelogin_admin']; ?>" vous êtes connecté en tant qu'administratrice/teur </h1>
 
     <section id="news">
         <article>
@@ -87,7 +87,7 @@ include_once 'inc/head.php';
                     echo "<a href='" . $lesdocs['lurl'] . "' target='_blank'>" . $lesdocs['letitre'] . "</a> (";
                     // BONUS affichage de l'extension récupérée de l'url
                     echo strrchr($lesdocs['lurl'], '.');
-                    echo ") | <img src='supprimer.png' 
+                    echo ") | <img src='img/supprimer.png' 
                       onclick='supprime(\""
                     . substr(strrchr($lesdocs['lurl'], '/'), 1) . "\""
                     . ", "

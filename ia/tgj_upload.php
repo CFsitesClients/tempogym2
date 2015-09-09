@@ -48,6 +48,7 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
                             ('$dossier$nom$extension','$letitre',$taille_fichier,$lid);
         
         ") or die("Erreur lors de l'insertion: " . mysqli_error($connect));
+        
     } else {
         echo "Erreur lors de l'upload du fichier";
     }

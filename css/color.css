@@ -49,6 +49,16 @@ body{
     color: white;
 }
 
+/* Bullet point liste des documents */
+ul.download{
+    /*list-style: circle inside url('../ia/ico_download.jpg'); */
+    list-style: none;  
+}
+ul.download img{
+    margin-right:10px;
+    margin-bottom: -6px;
+}
+
 /* DATES : TABLES */
 #docs table.tenue th, #docs table.tenue td, #docs table.cotisation, #docs table.cotisation td, #docs table.cotisation th, #dates table.lieux th, #dates table.lieux td, #dates table.jour td{
     border:1px solid #FECC3E;
