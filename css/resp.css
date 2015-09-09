@@ -196,7 +196,7 @@ pre{
 p.adminmedia{
     text-align:center;
 }
-button.adminmedia {
+/*button.adminmedia {
     margin: auto;
     font-family: "Courier New",Courier,monospace;
     font-size: 1em;
@@ -204,14 +204,45 @@ button.adminmedia {
     padding: .7em;
     border: 1px solid #B0C4DE;
     border-radius: 1em;	
-
-
 }
 button.adminmedia:hover{
     background-color:LightSlateGray;
     color:LightCyan;
     border:1px LightSlateGray solid;
+}*/
+
+/* affordance bouton clicable */
+button.adminmedia,#connexion input[type="submit"] {
+    margin: .5em auto;
+    /*font-family: "Courier New",Courier,monospace;*/
+    font-size: 1em;
+    padding: .68em;
+    color: white;
+    font-weight:bold;
+    border-radius: .6em;
+    background-image:url(../img/2.png);
+    background-color:white;
+    border: 1px solid white; 
 }
+button.adminmedia:hover, #connexion input[type="submit"]:hover{
+    background-image:url(../img/1.png);
+    background-color:white;
+    border: 1px solid white;
+}
+/* SAFARI  :form connexion*/
+form#connexion{
+    padding:.625em;
+}
+
+
+#connexion input{
+    display:block;
+    margin:1em auto;
+    padding:.7em;
+    border:1px LightSteelBlue solid;
+    border-radius:1em;
+}
+
 
 input{
     font-family: 'Cuprum', sans-serif;
@@ -220,7 +251,7 @@ input{
 }
 
 /* bouton centré */
-input[type="submit"]{
+/*input[type="submit"]{
     clear:both;
     display:block;
     margin-left:auto;
@@ -235,14 +266,8 @@ input[type="submit"]:hover{
     border:1px LightSlateGray solid;
     background-color:LightSlateGray;
     color:LightCyan;
-}
-#connexion  input{
-    display:block;
-    margin:1em auto;
-    padding:.7em;
-    border:1px LightSteelBlue solid;
-    border-radius:1em;
-}
+}*/
+
 
 /* FOOTER */
 footer{
