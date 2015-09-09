@@ -1,4 +1,5 @@
 <?php
+
 require_once 'connect.php';
 
 if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
@@ -54,12 +55,12 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
 
 
 /* Supprime un document téléchargeable de la liste */
-if(isset($_GET["lid"]) && ctype_digit($_GET["lid"])){
+if (isset($_GET["lid"]) && ctype_digit($_GET["lid"])) {
     // récupération de l'url du fichier dans la db grâce à son id
-    $req = mysqli_query($connect,"SELECT lurl FROM tgj_docs WHERE id=".$_GET["lid"])or die("ZUT!");
+    $req = mysqli_query($connect, "SELECT lurl FROM tgj_docs WHERE id=" . $_GET["lid"])or die("ZUT!");
     $url = mysqli_fetch_assoc($req);
     // suppression de la db
-    mysqli_query($connect,"DELETE FROM tgj_docs WHERE id =".$_GET['lid']." AND tgj_pages_id=10" )or die("Zut!");
+    mysqli_query($connect, "DELETE FROM tgj_docs WHERE id =" . $_GET['lid'])or die("Zut!");
     // suppression du fichier
     unlink($url['lurl']);
 }

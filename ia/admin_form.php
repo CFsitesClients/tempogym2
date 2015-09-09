@@ -11,7 +11,7 @@ if (isset($_POST['lelogin']) && isset($_POST['lemdp'])) {
 
     // vérification dans la table utilisateurs si le login ET le mdp correspondent à un utilisateur
     $recup_util_admin = mysqli_query($connect, "SELECT * FROM `tgi_users` WHERE `tgi_pages_id`=8 AND lelogin='$lelogin' AND lemdp='$lemdp'; ") or die("Erreur: " . mysqli_error($connect));
-    
+
 
     // si on a récupéré un utilisateur (donc connexion réussie) - mysqli_num_rows($req) envoie le nombre de lignes de résultats obtenu par la requête, si il n'a pas de résultat il envoie 0 (0==false), sinon un entier numérique (int == true). Ici, comme lelogin est unique, on ne peut avoir que 0 ou 1 comme résultat
     if (mysqli_num_rows($recup_util_admin)) {

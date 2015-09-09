@@ -21,7 +21,7 @@ include_once 'inc/head.php';
             }
             ?>
         </article>
-		<article>
+        <article>
             <h2>Modifier le document pdf : Organigramme</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
@@ -67,7 +67,7 @@ include_once 'inc/head.php';
                 }
                 ?>
         </article> 
-        
+
         <article>
             <h2>Modifier la liste des documents pdf téléchargeables : </h2>
             <div>
@@ -82,22 +82,21 @@ include_once 'inc/head.php';
                 </form>
                 <?php
                 require_once 'tgj_upload.php';
-				
+
                 while ($lesdocs = mysqli_fetch_assoc($recup_docs)) {
                     echo "<a href='" . $lesdocs['lurl'] . "' target='_blank'>" . $lesdocs['letitre'] . "</a> (";
                     // BONUS affichage de l'extension récupérée de l'url
                     echo strrchr($lesdocs['lurl'], '.');
-                    echo ")<br />";
-                    echo "<iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><p><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></p></iframe><br />";
-                    echo "<img src='supprimer.png' 
+                    echo ") | <img src='supprimer.png' 
                       onclick='supprime(\""
-                        .substr(strrchr($lesdocs['lurl'], '/'),1)."\""
-                        . ", "
-                        .$lesdocs['id'].");' alt='Supprimer' />";
+                    . substr(strrchr($lesdocs['lurl'], '/'), 1) . "\""
+                    . ", "
+                    . $lesdocs['id'] . ");' alt='Supprimer' /><br />";
+                    echo "<iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><p><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></p></iframe><br />";
                 }
                 ?>
         </article>   
-		 <article>
+        <article>
             <h2>Modifier le document pdf : Infos saison</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
