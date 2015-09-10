@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 // suppresion des variables de session
 $_SESSION = array();

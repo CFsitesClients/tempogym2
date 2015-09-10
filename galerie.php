@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once 'inc/head.php';
 ?>
 <section id="main">		
