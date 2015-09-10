@@ -51,8 +51,9 @@ include_once 'inc/head.php';
                 <input type="submit" value="Connexion" />
                 <?php
                 // si erreur on l'affiche
-                if (isset($erreur_connect))
+                if (isset($erreur_connect)) {
                     echo $erreur_connect;
+                }
                 ?>
             </form>
         </article>
