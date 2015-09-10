@@ -9,26 +9,27 @@ include_once 'inc/head.php';
 ?>
 <section id="main">
 
-    <h1>Bienvenue "<?= $_SESSION['lelogin_admin']; ?>" vous êtes connecté en tant qu'administratrice/teur </h1>
+    <h1><a id="top"></a>Bienvenue "<?= $_SESSION['lelogin_admin']; ?>" vous êtes connecté en tant qu'administratrice/teur </h1>
 
     <section id="news">
         <article>
             <?php
             while ($ligne = mysqli_fetch_assoc($reqarticles)) {
-                echo "<h2>" . $ligne['letitre'] . "</h2>";
+                echo "<h2><a id='adcueil'></a>" . $ligne['letitre'] . "</h2>";
                 echo "<p>" . $ligne['letexte'] . "</p>";
                 echo "<a href='modif.php?id=" . $ligne['id'] . "'><input type='button' value='Modifier' /></a>";
             }
             ?>
+			<p style="text-align:right"><a href="#top">Aller en haut</a></p>
         </article>
         <article>
-            <h2>Modifier le document pdf : Organigramme</h2>
+            <h2><a id='adsbl'></a>Modifier le document pdf : Organigramme</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
                 <form name="form_organi" action="admin.php" method="POST" enctype='multipart/form-data'>
                     <input type="hidden" name='lid' value="3" />
                     <input type="text" name="letitre" placeholder="Titre" required /><br/>
-                    <!-- A mettre avent le file ! = 5 mio -->
+                    <!-- A mettre avant le file ! = 5 mio -->
                     <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                     <input type="file" name="lefichier" required /><br/>
                     <input type="submit" value="Envoyer le fichier"/>
@@ -43,9 +44,10 @@ include_once 'inc/head.php';
                     echo "<iframe  width='50%' height='200px' src='" . $leorgani['lurl'] . "'><p class='dim'><a href='" . $leorgani['lurl'] . "' title='" . $leorgani['letitre'] . "'><img class='dim' src='" . $leorgani['lurl'] . "' alt='" . $leorgani['letitre'] . "'/></a></p></iframe><br />";
                 }
                 ?>
+				<p style="text-align:right"><a href="#top">Aller en haut</a></p>
         </article>   
         <article>
-            <h2>Modifier le document pdf : Calendrier</h2>
+            <h2><a id='addrier'></a>Modifier le document pdf : Calendrier</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
                 <form name="form_dates" action="admin.php" method="POST" enctype='multipart/form-data'>
@@ -66,10 +68,11 @@ include_once 'inc/head.php';
                     echo "<iframe  width='50%' height='200px' src='" . $lecalendar['lurl'] . "'><p class='dim'><a href='" . $lecalendar['lurl'] . "' title='" . $lecalendar['letitre'] . "'><img class='dim' src='" . $lecalendar['lurl'] . "' alt='" . $lecalendar['letitre'] . "'/></a></p></iframe><br />";
                 }
                 ?>
+				<p style="text-align:right"><a href="#top">Aller en haut</a></p>
         </article> 
 
         <article>
-            <h2>Modifier la liste des documents pdf téléchargeables : </h2>
+            <h2><a id='addocs'></a>Modifier la liste des documents pdf téléchargeables : </h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
                 <form name="form_docs" action="admin.php" method="POST" enctype='multipart/form-data'>
@@ -95,9 +98,10 @@ include_once 'inc/head.php';
                     echo "<iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><p><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></p></iframe><br />";
                 }
                 ?>
+				<p style="text-align:right"><a href="#top">Aller en haut</a></p>
         </article>   
         <article>
-            <h2>Modifier le document pdf : Infos saison</h2>
+            <h2><a id='adsais'></a>Modifier le document pdf : Infos saison</h2>
             <div>
                 <p>Fichier de maximum 5 MO au format: .pdf </p>
                 <form name="form_docs" action="admin.php" method="POST" enctype='multipart/form-data'>
@@ -118,6 +122,7 @@ include_once 'inc/head.php';
                     echo "<iframe  width='50%' height='200px' src='" . $lasaison['lurl'] . "'><p><a href='" . $lasaison['lurl'] . "' title='" . $lasaison['letitre'] . "'><img src='" . $lasaison['lurl'] . "' alt='" . $lasaison['letitre'] . "'/></a></p></iframe><br />";
                 }
                 ?>
+				<p style="text-align:right"><a href="#top">Aller en haut</a></p>
         </article>
     </section>
     <?php

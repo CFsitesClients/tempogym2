@@ -48,7 +48,6 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
                             ('$dossier$nom$extension','$letitre',$taille_fichier,$lid);
         
         ") or die("Erreur lors de l'insertion: " . mysqli_error($connect));
-        
     } else {
         echo "Erreur lors de l'upload du fichier";
     }
@@ -58,10 +57,10 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
 /* Supprime un document téléchargeable de la liste */
 if (isset($_GET["lid"]) && ctype_digit($_GET["lid"])) {
     // récupération de l'url du fichier dans la db grâce à son id
-    $req = mysqli_query($connect, "SELECT lurl FROM tgj_docs WHERE id=" . $_GET["lid"])or die("ZUT!");
+    $req = mysqli_query($connect, "SELECT lurl FROM tgj_docs WHERE id=" . $_GET["lid"])or die("Erreur lors de la requête de selection du documents !'");
     $url = mysqli_fetch_assoc($req);
     // suppression de la db
-    mysqli_query($connect, "DELETE FROM tgj_docs WHERE id =" . $_GET['lid'])or die("Zut!");
+    mysqli_query($connect, "DELETE FROM tgj_docs WHERE id =" . $_GET['lid'])or die("Erreur lors de la suppression du document !");
     // suppression du fichier
     unlink($url['lurl']);
 }
