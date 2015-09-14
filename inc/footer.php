@@ -1,4 +1,3 @@
-
 <footer>
     <img class="sponsor" src="img/cjette_.png" alt="Commune de Jette" />
     <img class="sponsor" src="img/cocof.png" alt="Cocof - Communaut&eacute; fran&ccedil;aise" />
