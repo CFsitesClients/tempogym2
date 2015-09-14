@@ -5,7 +5,7 @@ if (!isset($_SESSION['id_session_membre']) || $_SESSION['id_session_membre'] != 
     header("Location: deconnect.php");
 }
 include_once 'inc/meta.php';
-include_once 'inc/fotorama.php';
+/* include_once 'inc/fotorama.php'; */
 include_once 'inc/nav.php';
 ?>
 <section id="main">		
@@ -14,9 +14,7 @@ include_once 'inc/nav.php';
         <article>
             <h2>Galerie</h2>
             <p>
-                Vous êtes connecté en tant que membre<span class="hidden">, bienvenue "<?= $_SESSION['lelogin_membre']; ?>"</span>
-            </p>
-            <p class="adminmedia">
+                Vous êtes connecté en tant que membre &nbsp;
                 <a href="deconnect.php">
                     <button class="adminmedia" type="button">Déconnexion</button>
                 </a>
@@ -28,18 +26,12 @@ include_once 'inc/nav.php';
                         Votre navigateur n'est pas compatible
                     </audio>
                 </div>
-                <div class="fotorama" data-autoplay="true">
-                    <img src="img/slider1.jpg">
-                    <img src="img/slider2.jpg">
-                    <img src="img/slider3.jpg">
-                    <img src="img/slider4.jpg">
-                    <img src="img/slider5.jpg">
-                </div>
             </center>
         </article>
         <?php
         include_once 'inc/footer.php';
         ?>
     </section> 
+</section>
 </body>
 </html>
