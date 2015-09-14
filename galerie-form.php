@@ -1,10 +1,6 @@
 <?php
 session_start();
 require_once 'connect.php';
-// Si on a envoyer le form
-/*
-  var_dump($_POST);
- */
 if (isset($_POST['lelogin']) && isset($_POST['lemdp'])) {
     $lelogin = htmlspecialchars(strip_tags(trim($_POST['lelogin'])), ENT_QUOTES);
     $lemdp = md5(htmlspecialchars(strip_tags(trim($_POST['lemdp'])), ENT_QUOTES));
