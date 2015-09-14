@@ -1,4 +1,4 @@
-﻿<!-- 1. Link to jQuery (1.8 or later)-->
+<!-- 1. Link to jQuery (1.8 or later)-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
 <!-- fotorama.css & fotorama.js. -->

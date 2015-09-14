@@ -216,7 +216,7 @@ button.adminmedia,#connexion input[type="submit"] {
     margin: .5em auto;
     /*font-family: "Courier New",Courier,monospace;*/
     font-size: 1em;
-    padding: .68em;
+    padding: .38em;
     color: white;
     font-weight:bold;
     border-radius: .6em;
@@ -251,22 +251,23 @@ input{
 }
 
 /* bouton centré */
-/*input[type="submit"]{
+input[type="submit"]{
     clear:both;
     display:block;
     margin-left:auto;
     margin-right:auto;
-    font-family:"Courier New", Courier, monospace;
+   font-family:"Courier New", Courier, monospace;
     font-size:1em;
     padding:7px 20px;
     border:1px LightSteelBlue solid;
     border-radius:5px;
 }
+
 input[type="submit"]:hover{
     border:1px LightSlateGray solid;
     background-color:LightSlateGray;
     color:LightCyan;
-}*/
+}
 
 
 /* FOOTER */

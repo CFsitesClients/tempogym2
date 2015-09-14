@@ -6,7 +6,7 @@ body{
     background-color: navy;
     color: #b3ff66;
     font-family: courier new;
-    font-size:1em;
+	font-size:1em;
 }
 a{
     color: #b3ff66;
@@ -50,11 +50,11 @@ img.sponsor{
 /* MENU */
 header nav ul{
     background-color: navy;
-    margin:0 1em 0 0;
-    list-style-type:none;
+	margin:0 1em 0 0;
+	list-style-type:none;
 }
 header nav ul li ul li{
-    margin:0 0 0 1.3em;
+	margin:0 0 0 1.3em;
 }
 header nav ul li{
     background-color: #0CC6F8;
@@ -62,11 +62,11 @@ header nav ul li{
 }
 header nav ul li a{
     font-family: courier new;
-    font-weight:bold;
-    font-size:.9em;
+	font-weight:bold;
+	font-size:.9em;
     background-color: #0CC6F8;
     color: navy;
-    padding:0 .3125em ;
+	padding:0 .3125em ;
 }
 header nav ul li a:hover{
     background-color: navy;
@@ -74,13 +74,13 @@ header nav ul li a:hover{
 }
 
 input{
-    margin: 0 0 .5em .6em;
+	margin: 0 0 .5em .6em;
 }
 input[type="submit"]{
     border:1px LightCyan solid;
     background-color: LightCyan;
     color:LightSlateGray;
-    font-weight:bold;
+	font-weight:bold;
 }
 input[type="submit"]:hover{
     border:1px LightSlateGray solid;

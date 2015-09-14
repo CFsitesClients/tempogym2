@@ -1,7 +1,5 @@
 <?php
-
 require_once 'config.php';
-
 /*
  * 
  * Fonction d'upload de l'image d'origine, renvoie un tableau si réussie sinon renvoie une chaine de caractère contenant l'erreur

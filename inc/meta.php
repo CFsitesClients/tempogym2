@@ -12,4 +12,5 @@ Club Tempogym Jette
         <meta name="keywords" content="tempogym jette, tempogym, club, gym, gymnastique, gymnaste, jette, Bruxelles, tarif, horaire, sport, sportif, service, moniteur, monitrice, professeure, professeur d&acute;&eacute;ducation physique, comp&eacute;tition, spectacle, enfant, fille, gar&ccedil;on, parents, maternelle, primaire, secondaire, Cocof, Commune de Jette, Région Bruxelloise, sol, saut, barres, barres asym&eacute;triques, poutre, rondade, flic, salto, arri&egrave;re, avant">
 	<?php 
 	 include_once 'style_resp.php';   
+        
 
