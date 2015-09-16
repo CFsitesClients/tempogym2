@@ -1,10 +1,8 @@
 <?php
-require_once '../connect.php';
+require_once 'connect.php';
 
-/* afficher tous les artciles de la db 
+/* afficher les artciles de la page d'accueil */
 
- * SANS ckEditor limiter les modif aux 4 premiers articles, les articles suivant contiennent de l'HTML!
- *  */
 $sqlarticles= "SELECT * FROM `tgj_articles`LIMIT 2"; 
 $reqarticles = mysqli_query($connect, $sqlarticles) or die(mysqli_error($connect));
 

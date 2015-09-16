@@ -16,15 +16,16 @@
                 <li><a href="../galerie.php">Galerie</a></li>
                 <li><a href="../contact.php">Contact</a></li>
                 <li><a href="../docs.php">Documents</a></li>
-                <li><a id="top"></a><a class="connexion" href="deconnect.php">Se déconnecter</a>
-					<ul>
-						<li><a href="#adcueil">Modif accueil</a></li>
-						<li><a href="#adsbl">Modif organigramme</a></li>
-						<li><a href="#addrier">Modif calendrier</a></li>
-						<li><a href="#addocs">Modif documents</a></li>
-						<li><a href="#adsais">Modif saison</a></li>
-					</ul>
-				</li>
+                <li><a class="connexion" href="deconnect.php">Se déconnecter</a>
+                    <ul>
+                        <li><a href="#adcueil">Modif accueil</a></li>
+                        <li><a href="#adsbl">Modif organigramme</a></li>
+                        <li><a href="#addrier">Modif calendrier</a></li>
+                        <li><a href="#addocs">Modif documents</a></li>
+                        <li><a href="#adsais">Modif saison</a></li>
+                        <li><a href="#adimg">Modif galerie</a></li>                                   
+                    </ul>
+                </li>
             </ul>
             <!-- Option menu small device ::: Responsiveness -->
             <select onchange="top.location.href = this.options[this.selectedIndex].value;">
