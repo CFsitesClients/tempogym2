@@ -9,30 +9,12 @@ include_once 'inc/head.php';
             <h3>Le club Tempogym Jette</h3>
             <p>e-mail : tempogymjette&#64;hotmail.com | Gsm club : 0473/17.34.14</p>
 
-            <h3>Président</h3>
-            <p>Stéphane Etienne | stefetienne&#64;skynet.be</p>
 
-<!--
-            <h3><a id="tenue"></a>Vice-Président</h3>
-            <p>Patrice Van Den bossche
-
-
-            <h3>Trésorier</h3>
-            <p>Didier Dokens</p>
-
-
-            <h3>Secrétaire</h3>
-            <p>Catherine Massart</p>
-
-
-            <h3>Coordinateur</h3>
-            <p>Jonathan Nani</p>
--->
         </article>
 
 
-        <artcile><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span>
-        </artcile>
+        <p><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span>
+        </p>
     </section>
     <section id="lieux">
         <article>
@@ -58,10 +40,10 @@ include_once 'inc/head.php';
         </article>
     </section>
 
-        <?php
-        include_once 'inc/footer.php';
-        ?>
-    </section> 
+    <?php
+    include_once 'inc/footer.php';
+    ?>
+</section> 
 
 </body>
 </html>
