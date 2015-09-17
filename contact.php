@@ -8,11 +8,7 @@ include_once 'inc/head.php';
             <h2>Le comité administratif</h2>
             <h3>Le club Tempogym Jette</h3>
             <p>e-mail : tempogymjette&#64;hotmail.com | Gsm club : 0473/17.34.14</p>
-
-
         </article>
-
-
         <p><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span>
         </p>
     </section>
