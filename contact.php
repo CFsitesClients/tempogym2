@@ -21,13 +21,13 @@ include_once 'inc/head.php';
 
 
             <h3>BASIC-FIT</h3>
-            <p>Avenue du Laerbeek 125 à 1090 Bruxelles (accès par l’UZ)<br />02/477.40.99</p>
+            <p>Avenue du Laerbeek 125 à 1090 Bruxelles (accès par l’UZ)</p>
 
             <h3>SACRE-CŒUR DE JETTE</h3>
-            <p>Avenue du Sacré-Cœur 8 à 1090 Bruxelles<br />Entrée via la rue Bonaventure, en face du numéro 262<br />02/478.71.90</p>
+            <p>Avenue du Sacré-Cœur 8 à 1090 Bruxelles<br />Entrée via la rue Bonaventure, en face du numéro 262</p>
 
             <h3>C<span class="none">ENTRE</span> S<span class="none">PORTIF DE LA</span> FORET DE SOIGNES</h3>
-            <p>Salle G1<br />Chaussée de Wavre 2057 à 1160 Bruxelles<br />02/672.22.60</p>	
+            <p>Salle G1<br />Chaussée de Wavre 2057 à 1160 Bruxelles</p>	
 
             <h3>TEMPOGYM JETTE</h3>
             <p>Avenue du Comté de Jette 3 à 1090 Bruxelles<br />
