@@ -2,7 +2,7 @@
 
 require_once 'connect.php';
 
-if (isset($_FILES['lefichier']) && isset($_POST['letitre'])) {
+if (isset($_FILES['lefichier']) && isset($_POST['letitre']) && !isset($_GET['img'])) {
     $letitre = htmlspecialchars(strip_tags(trim($_POST['letitre'])), ENT_QUOTES);
     (isset($_POST['lid']) && ctype_digit($_POST['lid'])) ? $lid = $_POST['lid'] : $lid = 8;
     // chemin du dossier d'upload

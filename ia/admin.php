@@ -126,7 +126,7 @@ include_once 'inc/head.php';
         </article>
         <article id='adimg'>
 
-            <form action="admin.php" enctype="multipart/form-data" method="POST" name="onposte">
+            <form action="admin.php?img=true" enctype="multipart/form-data" method="POST" name="onposte">
                 <input type="text" name="letitre" /><br/>
                <!-- <input type="hidden" name="MAX_FILE_SIZE" value="50000000" /> -->
                 <input type="file" name="lefichier" /><br/>
