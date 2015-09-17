@@ -1,7 +1,7 @@
 <?php
 
 // si on a envoyé le formulaire et qu'un fichier est bien attaché
-if (isset($_POST['letitre']) && isset($_FILES['lefichier'])) {
+if (isset($_POST['letitre']) && isset($_FILES['lefichier']) && isset($_GET['img'])) {
 
 // traitement des chaines de caractères
     $letitre = traite_chaine($_POST['letitre']);
