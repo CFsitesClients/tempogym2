@@ -13,9 +13,6 @@ include_once 'inc/head.php';
             <p><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span></p>
         </article>
 
-
-        <p><span class="lien_interne"><a href="hist.php#organi">Voir l'organigramme</a></span>
-        </p>
     </section>
     <section id="lieux">
         <article>
