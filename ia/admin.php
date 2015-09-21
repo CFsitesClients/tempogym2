@@ -21,7 +21,7 @@ include_once 'inc/head.php';
                 echo "<a href='modif.php?id=" . $ligne['id'] . "'><input type='button' value='Modifier' /></a>";
             }
             ?>
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article>
         <article id='adsbl'>
             <h2>Modifier le document pdf : Organigramme</h2>
@@ -38,14 +38,14 @@ include_once 'inc/head.php';
             <?php
             require_once 'tgj_upload.php';
             while ($leorgani = mysqli_fetch_assoc($recup_organi)) {
-                echo "<a href='" . $leorgani['lurl'] . "' target='_blank'>" . $leorgani['letitre'] . "</a> (";
+                echo "<p><a href='" . $leorgani['lurl'] . "' target='_blank'>" . $leorgani['letitre'] . "</a> (";
                 // BONUS affichage de l'extension récupérée de l'url
                 echo strrchr($leorgani['lurl'], '.');
-                echo ")<br />";
-                echo "<iframe  width='50%' height='200px' src='" . $leorgani['lurl'] . "'><p class='dim'><a href='" . $leorgani['lurl'] . "' title='" . $leorgani['letitre'] . "'><img class='dim' src='" . $leorgani['lurl'] . "' alt='" . $leorgani['letitre'] . "'/></a></p></iframe><br />";
+                echo ")</p>";
+                echo "<p><iframe  width='50%' height='200px' src='" . $leorgani['lurl'] . "'><a href='" . $leorgani['lurl'] . "' title='" . $leorgani['letitre'] . "'><img class='dim' src='" . $leorgani['lurl'] . "' alt='" . $leorgani['letitre'] . "'/></a></iframe></p><br />";
             }
             ?>
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article>   
         <article id='addrier'>
             <h2>Modifier le document pdf : Calendrier</h2>
@@ -62,14 +62,14 @@ include_once 'inc/head.php';
             <?php
             require_once 'tgj_upload.php';
             while ($lecalendar = mysqli_fetch_assoc($recup_dates)) {
-                echo "<a href='" . $lecalendar['lurl'] . "' target='_blank'>" . $lecalendar['letitre'] . "</a> (";
+                echo "<p><a href='" . $lecalendar['lurl'] . "' target='_blank'>" . $lecalendar['letitre'] . "</a> (";
                 // BONUS affichage de l'extension récupérée de l'url
                 echo strrchr($lecalendar['lurl'], '.');
-                echo ")<br />";
-                echo "<iframe  width='50%' height='200px' src='" . $lecalendar['lurl'] . "'><p class='dim'><a href='" . $lecalendar['lurl'] . "' title='" . $lecalendar['letitre'] . "'><img class='dim' src='" . $lecalendar['lurl'] . "' alt='" . $lecalendar['letitre'] . "'/></a></p></iframe><br />";
+                echo ")</p>";
+                echo "<p><iframe  width='50%' height='200px' src='" . $lecalendar['lurl'] . "'><a href='" . $lecalendar['lurl'] . "' title='" . $lecalendar['letitre'] . "'><img class='dim' src='" . $lecalendar['lurl'] . "' alt='" . $lecalendar['letitre'] . "'/></a></iframe></p>";
             }
             ?>
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article> 
         <article id='addocs'>
             <h2>Modifier la liste des documents pdf téléchargeables : </h2>
@@ -87,18 +87,18 @@ include_once 'inc/head.php';
             require_once 'tgj_upload.php';
 
             while ($lesdocs = mysqli_fetch_assoc($recup_docs)) {
-                echo "<a href='" . $lesdocs['lurl'] . "' target='_blank'>" . $lesdocs['letitre'] . "</a> (";
+                echo "<p><a href='" . $lesdocs['lurl'] . "' target='_blank'>" . $lesdocs['letitre'] . "</a> (";
                 // BONUS affichage de l'extension récupérée de l'url
                 echo strrchr($lesdocs['lurl'], '.');
                 echo ") | <img src='img/supprimer.png' 
                       onclick='supprime(\""
                 . substr(strrchr($lesdocs['lurl'], '/'), 1) . "\""
                 . ", "
-                . $lesdocs['id'] . ");' alt='Supprimer' /><br />";
-                echo "<iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><p><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></p></iframe><br />";
+                . $lesdocs['id'] . ");' alt='Supprimer' /></p>";
+                echo "<p><iframe  width='50%' height='200px' src='" . $lesdocs['lurl'] . "'><a href='" . $lesdocs['lurl'] . "' title='" . $lesdocs['letitre'] . "'><img src='" . $lesdocs['lurl'] . "' alt='" . $lesdocs['letitre'] . "'/></a></iframe></p>";
             }
             ?>
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article>   
         <article id='adsais'>
             <h2>Modifier le document pdf : Infos saison</h2>
@@ -115,17 +115,18 @@ include_once 'inc/head.php';
             <?php
             require_once 'tgj_upload.php';
             while ($lasaison = mysqli_fetch_assoc($recup_saison)) {
-                echo "<a href='" . $lasaison['lurl'] . "' target='_blank'>" . $lasaison['letitre'] . "</a> (";
+                echo "<p><a href='" . $lasaison['lurl'] . "' target='_blank'>" . $lasaison['letitre'] . "</a> (";
                 // BONUS affichage de l'extension récupérée de l'url
                 echo strrchr($lasaison['lurl'], '.');
-                echo ")<br />";
-                echo "<iframe  width='50%' height='200px' src='" . $lasaison['lurl'] . "'><p><a href='" . $lasaison['lurl'] . "' title='" . $lasaison['letitre'] . "'><img src='" . $lasaison['lurl'] . "' alt='" . $lasaison['letitre'] . "'/></a></p></iframe><br />";
+                echo ")</p>";
+                echo "<p><iframe  width='50%' height='200px' src='" . $lasaison['lurl'] . "'><a href='" . $lasaison['lurl'] . "' title='" . $lasaison['letitre'] . "'><img src='" . $lasaison['lurl'] . "' alt='" . $lasaison['letitre'] . "'/></a></p></iframe></p>";
             }
             ?>
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article>
         <article id='adimg'>
-
+            <h2>Uploader les images, et cocher une catégorie</h2>
+            <p>Fichier de maximum 5 MO au format: .jpg, .jpeg, .png </p>
             <form action="admin.php?img=true" enctype="multipart/form-data" method="POST" name="onposte">
                 <input type="text" name="letitre" /><br/>
                <!-- <input type="hidden" name="MAX_FILE_SIZE" value="50000000" /> -->
@@ -133,21 +134,21 @@ include_once 'inc/head.php';
                 <textarea name="ladesc"></textarea><br/>
 
                 <input type="submit" value="Envoyer le fichier" /><br/>
-                Catégories : <?php
+                <p>Catégories : <?php
 // affichage des catégories
-                while ($ligne = mysqli_fetch_assoc($recup_section)) {
+                    while ($ligne = mysqli_fetch_assoc($recup_section)) {
 
-                    echo $ligne['lintitule'] . "  <input type='checkbox' name='lidcat' value='" . $ligne['id'] . "' > | ";
-                }
-                ?>
+                        echo $ligne['lintitule'] . "  <input type='checkbox' name='lidcat' value='" . $ligne['id'] . "' > | ";
+                    }
+                    ?></p>
             </form>
 
 
-            <nav>
-                <?php
-                echo pagination($nb_total, $pg_actu, $elements_par_page, $get_pagination)
-                ?>
-            </nav>
+            <nav><p>
+                    <?php
+                    echo pagination($nb_total, $pg_actu, $elements_par_page, $get_pagination)
+                    ?>
+                </p></nav>
 
 
             <?php
@@ -156,7 +157,7 @@ include_once 'inc/head.php';
                 /* echo "<h3 class='hidden'>" . $ligne['letitre'] . "</h3>"; */
 
                 echo "<a href='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . ".jpg' target='_blank'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne['lenom'] . ".jpg' alt='' /></a>";
-                /* echo  $ligne['ladedsc'] . "<br /><br />"; */
+                /* echo  $ligne['ladedsc'] . ; */
                 // affichage des sections
                 echo $ligne['lintitule'];
                 echo "<img onclick='supprime(" . $ligne['id'] . ");' src='../img/supprimer.png' alt='supprimer' />";
@@ -164,7 +165,7 @@ include_once 'inc/head.php';
             }
             ?>
 
-            <p style="text-align:right"><a href="#top">Aller en haut</a></p>
+            <p class="right"><a href="#top">Aller en haut</a></p>
         </article>
     </section>
     <?php

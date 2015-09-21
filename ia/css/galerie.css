@@ -14,3 +14,23 @@
 .miniatures a:hover{
     opacity: .5;
 }
+
+
+/* top */
+p.right{
+text-align:right;
+
+}
+/* Images de fond */
+article#adimg form{
+	background-image:url('../img/img_ico.png');
+	background-position: right top;
+    background-repeat: no-repeat;
+	
+}
+article#adsais, article#addocs, article#addrier, article#adsbl{
+	background-image:url('../img/pdf_ico.png');
+	background-position: right top;
+    background-repeat: no-repeat;
+	
+}
