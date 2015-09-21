@@ -19,7 +19,8 @@ $sqlaffichcat1 = "SELECT p.*,c.*
     FROM tgj_photos p
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 1
         GROUP BY p.id
-        ORDER BY p.id DESC";
+        ORDER BY p.id DESC
+        LIMIT 10";
 
 
 
@@ -29,12 +30,12 @@ $sqlaffichcat2 = "SELECT p.*,c.*
     FROM tgj_photos p
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 2
         GROUP BY p.id
-        ORDER BY p.id DESC";
+        ORDER BY p.id DESC
+        LIMIT 10";
 
 
 
 $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connect));
-
 ?>
 <section id="main">		
     <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
@@ -49,7 +50,7 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
             </p>
             <center>
                 <div id="audio">
-                    <audio controls="controls" preload="none">
+                    <audio preload="auto" controls autoplay>
                         <source src="audio/Candy.mp3" type="audio/mp3" /> 
                         Votre navigateur n'est pas compatible
                     </audio>
@@ -59,40 +60,44 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
         <article>
             <div id="tabs">
                 <ul>
-                    <li><a href="#fragment-1"><span>Entraînements</span></a></li>
-                    <li><a href="#fragment-2"><span>Évenements</span></a></li>
+                    <li><a href="#fragment-1"><span>Photos des entraînements</span></a></li>
+                    <li><a href="#fragment-2"><span>Photos des évenements</span></a></li>
+                    <li><a href="#fragment-3"><span>Vidéos</span></a></li> 
                 </ul>
                 <div id="fragment-1">
                     <ul id="lightGallery" class="gallery">
-                     <?php
-            while ($ligne = mysqli_fetch_assoc($recup_sql)) {
-               
-                
+                        <?php
+                        while ($ligne = mysqli_fetch_assoc($recup_sql)) {
 
-                echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . "' /></li>";
- 
-            }
-            ?>
-            </ul>
+
+
+                            echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . "' /></li>";
+                        }
+                        ?>
+                    </ul>
 
                 </div>
                 <div id="fragment-2">
                     <ul id="lightGallery2" class="gallery">
-                     <?php
-            while ($ligne2 = mysqli_fetch_assoc($recup_sql2)) {
- 
-                echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne2['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . "' /></li>";
- 
-            }
-            ?>
+<?php
+while ($ligne2 = mysqli_fetch_assoc($recup_sql2)) {
+
+    echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne2['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . "' /></li>";
+}
+?>
+                    </ul>
+                </div>
+                <div id="fragment-3">
+                    <ul id="lightGallery3" class="gallery">
+
                     </ul>
                 </div>
                 <span class="clear"></span>
             </div>
         </article>
-        <?php
-        include_once 'inc/footer.php';
-        ?>
+<?php
+include_once 'inc/footer.php';
+?>
     </section> 
 </section>
 <script>
