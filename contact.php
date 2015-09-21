@@ -5,8 +5,8 @@ include_once 'inc/head.php';
     <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
     <section id="contact">
         <article>
-            <h2>Le comité administratif</h2>
-            <h3>Le club Tempogym Jette</h3>
+
+            <h2>Le club Tempogym Jette</h2>
             <p>e-mail : tempogymjette&#64;hotmail.com | Gsm club : 0473/17.34.14</p>
 
 
@@ -21,7 +21,7 @@ include_once 'inc/head.php';
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z6ZbdxfB0nSs.kB-6GCDLN1TM" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
 
             <h3>BASIC-FIT</h3>
-            <p>Avenue du Laerbeek 125 à 1090 Bruxelles (accès par l’UZ)<br />02/477.40.99</p>
+            <p>Avenue du Laerbeek 125 à 1090 Bruxelles (accès par l’UZ)</p>
 
             <h3>SACRE-CŒUR DE JETTE</h3>
             <p>Avenue du Sacré-Cœur 8 à 1090 Bruxelles<br />Entrée via la rue Bonaventure, en face du numéro 262</p>

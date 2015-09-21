@@ -73,7 +73,7 @@ header nav ul li a:hover{
     color: #b3ff66;
 }
 
-input{
+input, textarea{
 	margin: 0 0 .5em .6em;
 }
 input[type="submit"]{
@@ -87,6 +87,7 @@ input[type="submit"]:hover{
     background-color:LightSlateGray;
     color:LightCyan;
 }
+
 
 .connexion{
     background-color: #B3FF66;
