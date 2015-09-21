@@ -4,9 +4,37 @@ session_start();
 if (!isset($_SESSION['id_session_membre']) || $_SESSION['id_session_membre'] != session_id()) {
     header("Location: deconnect.php");
 }
+
 include_once 'inc/meta.php';
 include_once 'inc/fotorama.php';
 include_once 'inc/nav.php';
+
+
+/* Afficher les images */
+require_once 'ia/config.php';
+require_once 'ia/connect.php';
+
+
+$sqlaffichcat1 = "SELECT p.*,c.*
+    FROM tgj_photos p
+    INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 1
+        GROUP BY p.id
+        ORDER BY p.id DESC";
+
+
+
+$recup_sql = mysqli_query($connect, $sqlaffichcat1) or die(mysqli_error($connect));
+
+$sqlaffichcat2 = "SELECT p.*,c.*
+    FROM tgj_photos p
+    INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 2
+        GROUP BY p.id
+        ORDER BY p.id DESC";
+
+
+
+$recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connect));
+
 ?>
 <section id="main">		
     <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
@@ -36,28 +64,30 @@ include_once 'inc/nav.php';
                 </ul>
                 <div id="fragment-1">
                     <ul id="lightGallery" class="gallery">
-                        <li data-src="tgj_gallery/images/affichees/img1.jpg">
-                            <img src="tgj_gallery/images/miniatures/tn_img1.jpg" />
-                        </li>
-                        <li data-src="tgj_gallery/images/affichees/img2.png">
-                            <img src="tgj_gallery/images/miniatures/tn_img2.png" />
-                        </li>
-                    </ul>
+                     <?php
+            while ($ligne = mysqli_fetch_assoc($recup_sql)) {
+               
+                
+
+                echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne['lenom'] . "' /></li>";
+ 
+            }
+            ?>
+            </ul>
+
                 </div>
                 <div id="fragment-2">
                     <ul id="lightGallery2" class="gallery">
-                        </li>
-                        <li data-src="tgj_gallery/images/affichees/img3.png">
-                            <img src="tgj_gallery/images/miniatures/tn_img3.png" />
-                        </li>
-                        <li data-src="tgj_gallery/images/affichees/img4.jpg">
-                            <img src="tgj_gallery/images/miniatures/tn_img4.jpg" />
-                        </li>
-                        <li data-src="tgj_gallery/images/affichees/img5.png">
-                            <img src="tgj_gallery/images/miniatures/tn_img5.png" />
-                        </li>
+                     <?php
+            while ($ligne2 = mysqli_fetch_assoc($recup_sql2)) {
+ 
+                echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne2['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . "' /></li>";
+ 
+            }
+            ?>
                     </ul>
                 </div>
+                <span class="clear"></span>
             </div>
         </article>
         <?php
