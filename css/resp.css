@@ -269,7 +269,9 @@ input[type="submit"]:hover{
     background-color:LightSlateGray;
     color:LightCyan;
 }
-
+.clear{
+    clear:both;
+}
 
 /* FOOTER */
 footer{
@@ -481,6 +483,13 @@ footer p{
     }
     #contact span.none, #docs span.none{
         display:none;
+    }
+    /* jQuery plugin : Optimisation css mobil */
+    .ui-widget-content{
+        height: 400px;
+    }
+    #lightGallery li img, #lightGallery2 li img{
+        width:35%;
     }
 }
 

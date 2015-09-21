@@ -144,11 +144,13 @@ include_once 'inc/head.php';
             </form>
 
 
-            <nav><p>
+            <nav>
+                <p>
                     <?php
                     echo pagination($nb_total, $pg_actu, $elements_par_page, $get_pagination)
                     ?>
-                </p></nav>
+                </p>
+            </nav>
 
 
             <?php

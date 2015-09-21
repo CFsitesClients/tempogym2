@@ -25,7 +25,7 @@
                 <option value="galerie.php">Galerie</option>
                 <option value="contact.php">Contact</option>
                 <option value="docs.php">Documents</option>
-                <option value="ia/admin_form.php" target="_blank">Administrer</option>
+                <option value="ia/admin_form.php">Administrer</option>
             </select>
         </nav>
     </header>  
