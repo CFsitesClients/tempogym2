@@ -1,0 +1,467 @@
+/* Styles pour le site CLIENT TEMPOGYM Jette  */
+/* 20150631 Version Responsive  @iNani */
+
+/* Adaptation % for responsiveness */
+/* Résolution idéale : 955px 
+        Police : 16px
+*/
+
+
+/* ss Sections
+#news
+#about
+#dates
+#galery
+#contact
+#docs
+
+#organi
+#lieux
+*/
+
+
+body{
+    width: 100%; 
+    height:100%;
+    margin:0 auto;
+    padding: 0;
+    font-size: 1em; 
+    font-family: Arial;
+}
+
+/* BANNER */
+header figure{
+    margin:0 auto;
+    padding:0;
+}
+/* MENU : voir nav_bouton.css */
+
+/* SECTION MAIN */
+#main section{
+    width: 99%; /*955px;*/
+}
+#main h1{
+    width: 99%;
+    margin:2px 0;
+    font-size:1.500em; /*24px;*/
+    /*padding:.5em 0;*/
+    text-align: center;
+}
+/* SS SECTION CHAPEAU*/
+section#chapeau p.intro{
+    margin: .65em;
+    padding: .45em;
+}
+
+/* SS SECTION NEWS */
+#main section#news, 
+#main section#about, 
+#main section#dates,
+#main section#galery,
+#main section#contact, 
+#main section#organi,
+#main section#lieux,
+#main section#docs
+{
+    padding: .95em 0;
+}
+#news article, 
+#about article, 
+#dates article,
+#galery article, 
+#contact article, 
+#organi article,
+#lieux article,
+#docs article
+{
+    margin:0 .5em .5em .5em;
+}
+#news article.right{
+    margin:.5em;
+}
+#news article h2, 
+#about article h2, 
+#dates article h2, 
+#galery article h2, 
+#contact article h2, 
+#organi article h2,
+#lieux article h2,
+#docs article h2{
+    font-size:1.125em; 
+    text-align: center;
+    margin:0;
+    padding:.5em 0;
+}
+#contact article h3, 
+#about article h3,
+#lieux article h3
+{
+    font-size:.938em;
+    text-align: center;
+    margin:0;
+    padding:.5em 0;
+}
+
+
+#news article p,
+#about article p,  
+#dates article p,  
+#galery article p,  
+#contact article p,  
+#organi article p,
+#lieux article p,
+#docs article p
+{
+    padding: 0 .5em;
+}
+
+/* SS SECTION CALENDAR */
+#calendar figure{
+    text-align:center;
+    margin:0;
+}
+#calendar figure img{
+    max-width:500px;
+    width:100%;
+}
+
+/* SS SECTION LIENS */
+#liens article h2{
+    text-align:center;
+    font-size: 1.2em;
+    margin:0;
+}
+#liens article ul.ssnav {
+    text-align: center;
+    list-style-type:none;
+}
+#liens article ul.ssnav li a{
+    text-decoration: none;
+}
+#liens article ul.ssnav li a:hover{
+    text-decoration: underline;
+}
+
+/* SS SECTION DATES */
+#dates img.dim{
+    width:80%;
+}
+#dates p.dim{
+    text-align:center;
+}
+/* -> temp */
+pre{
+    margin:3em 7em;
+    border: 1px solid black;
+}
+/* <- temp */
+
+/* SS SECTION DOCS */
+#docs img.word{
+    width:80%;
+}
+#docs p.word{
+    text-align:center;
+}
+#docs img.w_ico{
+    width:3%;
+}
+#docs table.tenue,#docs table.cotisation, #dates table.lieux, #dates table.jour{
+    width: 100%;
+}
+#docs table.tenue th, #docs table.cotisation td{
+    width: 24%;
+}
+#dates table.lieux th{
+    width: 32%;
+}
+#dates table.jour td{
+    width: 12%;
+}
+
+#docs table.tenue td, #docs table.cotisation td, #dates table.lieux td, #dates table.jour td{
+    text-align:center;
+}
+
+/* SS SECTION GALERY */
+/* nom du membre connecté - galerie images */
+.hidden{
+    display:none;  
+}
+#audio{
+    
+    margin:.3em;
+}
+#audio audio{
+    width:100%;
+    border-radius:.3em;
+    height:58px;
+}
+.clear{
+    clear:both;
+}
+
+
+/* FORMULAIRE et bouton de connexion */
+p.adminmedia{
+    text-align:center;
+}
+
+
+/* affordance bouton clicable */
+button.adminmedia,#connexion input[type="submit"] {
+    margin: .5em auto;
+    font-size: 1em;
+    padding: .38em;
+    color: white;
+    font-weight:bold;
+    border-radius: .6em;
+    background-image:url(../img/2.png);
+    background-color:white;
+    border: 1px solid white; 
+}
+button.adminmedia:hover, #connexion input[type="submit"]:hover{
+    background-image:url(../img/1.png);
+    background-color:white;
+    border: 1px solid white;
+}
+/* SAFARI  :form connexion*/
+form#connexion{
+    padding:.625em;
+}
+
+
+#connexion input{
+    display:block;
+    margin:1em auto;
+    padding:.7em;
+    border:1px LightSteelBlue solid;
+    border-radius:1em;
+}
+
+
+input{
+    font-family: 'Cuprum', sans-serif;
+    font-size:16px;	
+    color:SteelBlue;
+}
+
+/* bouton centré */
+input[type="submit"]{
+    clear:both;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:"Courier New", Courier, monospace;
+    font-size:1em;
+    padding:7px 20px;
+    border:1px LightSteelBlue solid;
+    border-radius:5px;
+}
+
+input[type="submit"]:hover{
+    border:1px LightSlateGray solid;
+    background-color:LightSlateGray;
+    color:LightCyan;
+}
+
+
+/* FOOTER */
+footer{
+    /*width:99%;
+    height:auto;*/
+    text-align:center;
+    padding:.2em;
+}
+img.sponsor{
+    max-height:100px;
+    margin:.5em;
+}
+footer p{
+    font-size:.75em;
+    margin:.5em;
+}
+
+
+
+/* Additional Styles for responsiveness */
+#responsive_banner {
+    width: 79%;
+}
+#responsive_logo {
+    width: 20%;
+    float:left;
+}
+
+
+/* MEDIA QUERIES */ 
+/* Version tablette Horizontal : onglets */ 
+@media screen and (min-width:801px) {
+    header nav select{
+        display:none;
+    }
+    #calendar{
+        width:100%;
+    }
+    #docs table.tenue_resp{
+        display:none;   
+    }
+    /* onglets */
+    header nav ul li a{
+        background-image:url(../img/2.png);
+        background-color:white;
+        border: 1px solid white;
+    }
+    header nav ul li a:hover{
+        background-image:url(../img/1.png);
+        background-color:white;
+        border: 1px solid white;
+    }
+    header nav ul li a span.none{
+        display:none;
+    }
+
+}
+
+/* Version desktop */
+@media screen and (min-width:960px){
+    header nav {
+        width:20%;
+        float:left;
+    }
+    header nav ul {
+        /*background-color: #CED8F6; /*white; transparent */
+        height:auto;
+    }
+    header nav ul li {
+        width:95%;
+        background-color: white;
+    }
+    header nav ul li a{
+        display:block;
+        width:100%;
+        color: white;
+        background-image:url(../img/2.png);
+        background-color:white;
+        border:1px solid white;
+    }	
+
+    header nav ul li a:hover {
+        color: white;
+        background-image:url(../img/1.png);
+        background-color:white;
+        border:1px solid white;
+    }
+    /* Debug menu trop long */
+    header nav ul li a span.none{
+        display:inline;
+    }
+
+
+    section {
+        width:80%;
+        float:left;
+    }
+    footer{
+        width:98.9%;
+        float:left;
+    }
+    #calendar{
+        width:100%;
+    }
+}
+
+/* Version tablette Vertical */ 
+@media screen and (max-width:800px) {
+    header nav ul {
+        display:none;
+    }
+    header nav select {
+        display:block;
+        width:100%;
+        margin: 0 auto;
+        font-size:1em;
+        background-color: #406BB6;
+        color:white;
+    }
+    header nav select option.selected{
+        font-style: italic;
+        color: lightblue;
+    }
+    #calendar{
+        width:100%;
+    }
+    footer img.sponsor{
+        max-height:70px;
+    }
+    #dates img.dim, #docs img.word{
+        width:85%;
+    }
+    #docs img.w_ico{
+        width:4%;
+    }
+    #docs table.tenue_resp{
+        display:none;
+    }
+}
+
+/* Version smartphone */
+@media screen and (max-width:480px) {
+    #responsive_banner {
+        display:none;
+    }
+    #responsive_logo {
+        display:block;
+        width:100%;
+    }	
+    header nav select{
+        clear:left;
+    }
+    #main h1{
+        display:none;
+    }
+    #liens{
+        display:none;
+    }
+    footer img.sponsor{
+        max-height:50px;
+    }
+    #calendar{
+        display:none;
+    }
+    #dates img.dim, #docs img.word{
+        width:100%;
+    }
+    #docs img.w_ico{
+        width:8%;
+    }
+    #docs table.tenue{
+        display:none;
+    }
+    #docs table.tenue_resp{
+        display:block;
+    }
+    #docs table.tenue_resp th, #docs table.tenue_resp td{
+        border:1px solid #FECC3E;
+    }
+    #docs table.tenue_resp th{
+        text-align:left;
+    }
+    #contact p {
+        margin: 2px 0;
+    }
+    #contact span.none, #docs span.none{
+        display:none;
+    }
+
+    /* jQuery plugin : Optimisation css mobil */
+    .ui-widget-content{
+        height: 400px;
+    }
+    #lightGallery li img, #lightGallery2 li img{
+        width:35%;
+    }
+}
+
+
+
