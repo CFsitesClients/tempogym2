@@ -20,7 +20,7 @@ $sqlaffichcat1 = "SELECT p.*,c.*
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 1
         GROUP BY p.id
         ORDER BY p.id DESC
-        LIMIT 10";
+        LIMIT 5";
 
 
 
@@ -31,7 +31,7 @@ $sqlaffichcat2 = "SELECT p.*,c.*
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 2
         GROUP BY p.id
         ORDER BY p.id DESC
-        LIMIT 10";
+        LIMIT 5";
 
 
 

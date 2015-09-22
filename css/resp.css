@@ -325,6 +325,7 @@ footer p{
         display:none;
     }
 
+
 }
 
 /* Version desktop */
@@ -407,11 +408,11 @@ footer p{
     #docs table.tenue_resp{
         display:none;
     }
-    
-    video{
-    width:100%; 
 
-}
+    video{
+        width:100%; 
+
+    }
 }
 
 /* Version smartphone */
