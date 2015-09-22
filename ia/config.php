@@ -32,11 +32,11 @@ $mini_qualite = 70;
 $formats_acceptes = array('jpg','jpeg','png');
 
 // Variable affichage par page
-$elements_par_page = 3;
+$elements_par_page = 5;
 // nom de la var GET de pagination
 $get_pagination = "pg";
 // pagination dans l'admin
-$elements_par_page_admin = 6;
+$elements_par_page_admin = 10;
 
 /* online */
 /*  $serveur = "195.144.11.155";
