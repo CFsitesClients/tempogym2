@@ -201,8 +201,8 @@ pre{
     clear:both;
 }
 video{
-    width:100%;
-    
+    width:40%;
+
 }
 
 
@@ -460,11 +460,19 @@ footer p{
 
     /* jQuery plugin : Optimisation css mobil */
     .ui-widget-content{
-        height: 400px;
+        height: 800px;
     }
+
     #lightGallery li img, #lightGallery2 li img{
         width:35%;
     }
+
+    video{
+        width:115%;
+        margin:0 -15px;
+
+    }
+
 
     /* IFRAME extra small */
     iframe{

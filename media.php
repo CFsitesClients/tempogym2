@@ -90,14 +90,36 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
                 </div>
                 <div id="fragment-3">
 
-                    <video id="lightGallery3" class="gallery" controls loop>
+                    <video poster="video/gvirgi.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
 
-                        <source src="video/Gvirgi.mp4" type="video/mp4">
+                        <source src="video/gvirgi.mp4" type="video/mp4">
+
+                        Votre navigateur n'est pas compatible.
+                    </video>
+                    <video poster="video/gcaliopi2.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+
+            
 
 
-                        <source src="video/Gcaliopi2.mp4" type="video/mp4">
-                        <source src="video/Gpat.mp4" type="video/mp4">
-                        <source src="video/GAM.mp4" type="video/mp4">
+                        <source src="video/gcaliopi2.mp4" type="video/mp4">
+                        Votre navigateur n'est pas compatible.
+                    </video>
+                    <video poster="video/gpat.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+
+
+                        <source src="video/gpat.mp4" type="video/mp4">
+
+                        Votre navigateur n'est pas compatible.
+                    </video>
+                    <video poster="video/gam.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+
+
+                        <source src="video/gam.mp4" type="video/mp4">
+
+                        Votre navigateur n'est pas compatible.
+                    </video>
+                    <video poster="video/baby.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+
                         <source src="video/baby.mp4" type="video/mp4">
                         Votre navigateur n'est pas compatible.
                     </video>
