@@ -50,9 +50,10 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
             </p>
             <center>
                 <div id="audio">
-                    <audio preload="auto" controls autoplay>
+                    <audio preload="auto" controls autoplay loop>
                         <source src="audio/Candy.mp3" type="audio/mp3" /> 
-                        Votre navigateur n'est pas compatible
+                        <source src="audio/RnB_Beat.mp3" type="audio/mp3" /> 
+                        Votre navigateur n'est pas compatible.
                     </audio>
                 </div>
             </center>
@@ -61,7 +62,7 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
             <div id="tabs">
                 <ul>
                     <li><a href="#fragment-1"><span>Photos des entraînements</span></a></li>
-                    <li><a href="#fragment-2"><span>Photos des évenements</span></a></li>
+                    <li><a href="#fragment-2"><span>Photos des événements</span></a></li>
                     <li><a href="#fragment-3"><span>Vidéos</span></a></li> 
                 </ul>
                 <div id="fragment-1">
@@ -79,25 +80,34 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
                 </div>
                 <div id="fragment-2">
                     <ul id="lightGallery2" class="gallery">
-<?php
-while ($ligne2 = mysqli_fetch_assoc($recup_sql2)) {
+                        <?php
+                        while ($ligne2 = mysqli_fetch_assoc($recup_sql2)) {
 
-    echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne2['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . "' /></li>";
-}
-?>
+                            echo "<li data-src='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . ".jpg'><img src='" . CHEMIN_RACINE . $dossier_mini . $ligne2['lenom'] . ".jpg' alt='" . CHEMIN_RACINE . $dossier_gd . $ligne2['lenom'] . "' /></li>";
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div id="fragment-3">
-                    <ul id="lightGallery3" class="gallery">
 
-                    </ul>
+                    <video id="lightGallery3" class="gallery" controls loop>
+
+                        <source src="video/Gvirgi.mp4" type="video/mp4">
+
+
+                        <source src="video/Gcaliopi2.mp4" type="video/mp4">
+                        <source src="video/Gpat.mp4" type="video/mp4">
+                        <source src="video/GAM.mp4" type="video/mp4">
+                        <source src="video/baby.mp4" type="video/mp4">
+                        Votre navigateur n'est pas compatible.
+                    </video>
                 </div>
                 <span class="clear"></span>
             </div>
         </article>
-<?php
-include_once 'inc/footer.php';
-?>
+        <?php
+        include_once 'inc/footer.php';
+        ?>
     </section> 
 </section>
 <script>

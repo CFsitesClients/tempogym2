@@ -189,7 +189,7 @@ pre{
     display:none;  
 }
 #audio{
-    
+
     margin:.3em;
 }
 #audio audio{
@@ -199,6 +199,10 @@ pre{
 }
 .clear{
     clear:both;
+}
+video{
+    width:100%;
+    
 }
 
 
@@ -461,6 +465,14 @@ footer p{
     #lightGallery li img, #lightGallery2 li img{
         width:35%;
     }
+
+    /* IFRAME extra small */
+    iframe{
+        margin: .5em .65em .5em .4em;
+        box-shadow: .2em .3em .4em lightsteelblue;
+        width:94.5%;
+    }
+
 }
 
 
