@@ -88,6 +88,10 @@ input[type="submit"]:hover{
     color:LightCyan;
 }
 
+/* Affiche images uploadées */
+#adimg{
+    height:530px;
+}
 
 .connexion{
     background-color: #B3FF66;

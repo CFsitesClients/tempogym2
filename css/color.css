@@ -70,7 +70,7 @@ ul.download img{
 iframe{
     border:.1em outset lightsteelblue;
     display:block;
-    margin: .65em;
+    margin: .65em .8em .65em .45em;
     box-shadow: .3em .4em .5em lightsteelblue;
     width:97.5%;
 }
