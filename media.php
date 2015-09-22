@@ -51,8 +51,8 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
             <center>
                 <div id="audio">
                     <audio preload="auto" controls autoplay loop>
-                        <source src="audio/Candy.mp3" type="audio/mp3" /> 
-                        <source src="audio/RnB_Beat.mp3" type="audio/mp3" /> 
+                        <source src="audio/candy.mp3" type="audio/mp3" /> 
+                        <source src="audio/rnb_beat.mp3" type="audio/mp3" /> 
                         Votre navigateur n'est pas compatible.
                     </audio>
                 </div>
@@ -111,7 +111,7 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
 
                         Votre navigateur n'est pas compatible.
                     </video>
-                    <video poster="video/gam.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+                   <!-- <video poster="video/gam.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
 
 
                         <source src="video/gam.mp4" type="video/mp4">
@@ -122,7 +122,7 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
 
                         <source src="video/baby.mp4" type="video/mp4">
                         Votre navigateur n'est pas compatible.
-                    </video>
+                    </video>-->
                 </div>
                 <span class="clear"></span>
             </div>

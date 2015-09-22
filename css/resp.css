@@ -201,7 +201,7 @@ pre{
     clear:both;
 }
 video{
-    width:40%;
+    width:32%; 
 
 }
 
@@ -407,6 +407,11 @@ footer p{
     #docs table.tenue_resp{
         display:none;
     }
+    
+    video{
+    width:100%; 
+
+}
 }
 
 /* Version smartphone */
@@ -460,7 +465,7 @@ footer p{
 
     /* jQuery plugin : Optimisation css mobil */
     .ui-widget-content{
-        height: 800px;
+        height: 600px; // selon le nbre de video 3- 5(800px))
     }
 
     #lightGallery li img, #lightGallery2 li img{
