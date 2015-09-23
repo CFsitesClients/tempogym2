@@ -4,10 +4,13 @@ width:100%;
 height:auto;
 min-width:150px;
 min-height:150px;
+margin:0;
+padding:0;
 }
 #lightGallery li, #lightGallery2 li{
-float:left;
+display:inline-block;
 }
 #lightGallery li img, #lightGallery2 li img{
 border:1px solid black;
 }
+

@@ -184,7 +184,7 @@ pre{
 }
 
 /* SS SECTION GALERY */
-/* nom du membre connecté - galerie images */
+/*  galerie images */
 .hidden{
     display:none;  
 }
@@ -325,6 +325,7 @@ footer p{
         display:none;
     }
 
+
 }
 
 /* Version desktop */
@@ -334,7 +335,6 @@ footer p{
         float:left;
     }
     header nav ul {
-        /*background-color: #CED8F6; /*white; transparent */
         height:auto;
     }
     header nav ul li {
@@ -407,11 +407,11 @@ footer p{
     #docs table.tenue_resp{
         display:none;
     }
-    
-    video{
-    width:100%; 
 
-}
+    video{
+        width:100%; 
+
+    }
 }
 
 /* Version smartphone */
@@ -463,14 +463,7 @@ footer p{
         display:none;
     }
 
-    /* jQuery plugin : Optimisation css mobil */
-    .ui-widget-content{
-        height: 600px; // selon le nbre de video 3- 5(800px))
-    }
 
-    #lightGallery li img, #lightGallery2 li img{
-        width:35%;
-    }
 
     video{
         width:115%;
@@ -485,8 +478,7 @@ footer p{
         box-shadow: .2em .3em .4em lightsteelblue;
         width:94.5%;
     }
+	
+	/* voir aussi thumbs.css*/
 
 }
-
-
-
