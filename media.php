@@ -19,8 +19,7 @@ $sqlaffichcat1 = "SELECT p.*,c.*
     FROM tgj_photos p
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 1
         GROUP BY p.id
-        ORDER BY p.id DESC
-        LIMIT 10";
+        ORDER BY p.id DESC";
 
 
 
@@ -30,12 +29,12 @@ $sqlaffichcat2 = "SELECT p.*,c.*
     FROM tgj_photos p
     INNER JOIN tgj_photos_cat c ON p.tgj_cat_id = 2
         GROUP BY p.id
-        ORDER BY p.id DESC
-        LIMIT 10";
+        ORDER BY p.id DESC";
 
 
 
 $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connect));
+
 ?>
 <section id="main">		
     <h1><a class="hp" href="index.php">Tempogym Jette</a></h1>
@@ -51,8 +50,9 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
             <center>
                 <div id="audio">
                     <audio preload="auto" controls autoplay loop>
-                        <source src="audio/candy.mp3" type="audio/mp3" /> 
+                        
                         <source src="audio/rnb_beat.mp3" type="audio/mp3" /> 
+						<source src="audio/candy.mp3" type="audio/mp3" /> 
                         Votre navigateur n'est pas compatible.
                     </audio>
                 </div>
@@ -61,8 +61,8 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
         <article>
             <div id="tabs">
                 <ul>
-                    <li><a href="#fragment-1"><span>Photos des entraînements</span></a></li>
-                    <li><a href="#fragment-2"><span>Photos des événements</span></a></li>
+                    <li><a href="#fragment-1"><span>Entraînements</span></a></li>
+                    <li><a href="#fragment-2"><span>Événements</span></a></li>
                     <li><a href="#fragment-3"><span>Vidéos</span></a></li> 
                 </ul>
                 <div id="fragment-1">
@@ -87,6 +87,7 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
                         }
                         ?>
                     </ul>
+
                 </div>
                 <div id="fragment-3">
 
@@ -111,18 +112,18 @@ $recup_sql2 = mysqli_query($connect, $sqlaffichcat2) or die(mysqli_error($connec
 
                         Votre navigateur n'est pas compatible.
                     </video>
-                   <!-- <video poster="video/gam.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+                 <video poster="video/gam.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
 
 
                         <source src="video/gam.mp4" type="video/mp4">
 
                         Votre navigateur n'est pas compatible.
                     </video>
-                    <video poster="video/baby.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
+                     <video poster="video/baby.jpg" id="lightGallery3" class="gallery" preload="auto" controls loop>
 
                         <source src="video/baby.mp4" type="video/mp4">
                         Votre navigateur n'est pas compatible.
-                    </video>-->
+                    </video>
                 </div>
                 <span class="clear"></span>
             </div>
