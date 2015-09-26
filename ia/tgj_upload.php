@@ -55,7 +55,7 @@ if (isset($_FILES['lefichier']) && isset($_POST['letitre']) && !isset($_GET['img
 
 
 /* Supprime un document téléchargeable de la liste */
-if (isset($_GET["lid"]) && ctype_digit($_GET["lid"])) {
+if (isset($_GET["lid"]) && ctype_digit($_GET["lid"]) && !isset($_GET['img'])) {
     // récupération de l'url du fichier dans la db grâce à son id
     $req = mysqli_query($connect, "SELECT lurl FROM tgj_docs WHERE id=" . $_GET["lid"])or die("Erreur lors de la requête de selection du documents !'");
     $url = mysqli_fetch_assoc($req);

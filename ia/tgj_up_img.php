@@ -47,8 +47,8 @@ if (isset($_POST['letitre']) && isset($_FILES['lefichier']) && isset($_GET['img'
 
 
 // si on confirme la suppression
-if (isset($_GET['delete']) && ctype_digit($_GET['delete'])) {
-    $idphoto = $_GET['delete'];
+if (isset($_GET['lide']) && ctype_digit($_GET['lide'])) {
+    $idphoto = $_GET['lide'];
 
     // récupération du nom de la photo
     $sql1 = "SELECT lenom, lextention FROM tgj_photos WHERE id=$idphoto;";
