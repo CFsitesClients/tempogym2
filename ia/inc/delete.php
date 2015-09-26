@@ -1,9 +1,9 @@
 
 <script>
-    function supprime(NOM, ID) {
-        var a = confirm("Voulez-vous vraiment supprimer " + NOM);
+    function supprime(ID) {
+        var a = confirm("Voulez-vous vraiment supprimer la photo  " + ID);
         if (a) {
-            document.location.href = "?lid=" + ID;
+            document.location.href = "?img=true&lide=" + ID;
         } else {
             return false;
         }
